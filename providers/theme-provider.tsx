@@ -1,7 +1,14 @@
 "use client";
 import { lightTheme, themeI } from "@/common-data/theme/theme";
 import { createContext, useContext, useState } from "react";
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider, createGlobalStyle } from "styled-components";
+
+const GlobalStyle = createGlobalStyle<{ $whiteColor?: boolean; }>`
+  body {
+    color: ${props => (props.$whiteColor ? 'white' : 'black')};
+    background-color: ${props => (props.$whiteColor ? 'black': 'white' )};
+  }
+`
 
 interface ThemeContextI {
   selectedTheme: themeI;
@@ -24,7 +31,8 @@ export function ThemeChangeProvider({
 
   return (
     <ThemeChanging.Provider value={{ selectedTheme, setSelectedTheme }}>
-      <ThemeProvider theme={selectedTheme}>{children}</ThemeProvider>
+      <ThemeProvider theme={selectedTheme}>
+      <GlobalStyle $whiteColor={false} />{children}</ThemeProvider>
     </ThemeChanging.Provider>
   );
 }

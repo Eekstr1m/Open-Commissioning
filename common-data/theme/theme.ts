@@ -15,7 +15,6 @@ export const lightTheme = {
   white: "#fff",
   primary: "#d8ae5f",
   darken_primary: "#a87c29",
-  //   bg_primary: "#fbf5e9",
   bg_primary: "#fffaf0",
 };
 
@@ -26,6 +25,5 @@ export const darkTheme = {
   white: "#fff",
   primary: "#d8ae5f",
   darken_primary: "#a87c29",
-  //   bg_primary: "#fbf5e9",
   bg_primary: "#fffaf0",
 };

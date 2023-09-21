@@ -9,7 +9,7 @@ export default function FeaturesBenefits() {
         <div className={s.content_item}>
           <div className={s.title}>Features</div>
           <div className={s.item}>
-            <Icon className="fa-solid fa-check"></Icon>HR Tech Solutions
+            <Icon className="fa-solid fa-check"></Icon>Tech Solutions
           </div>
           <div className={s.item}>
             <Icon className="fa-solid fa-check"></Icon>Workforce Analytics
@@ -40,7 +40,7 @@ export default function FeaturesBenefits() {
             Satisfaction
           </div>
           <div className={s.item}>
-            <Icon className="fa-solid fa-check"></Icon>Innovative HR Solutions
+            <Icon className="fa-solid fa-check"></Icon>Innovative Solutions
           </div>
         </div>
       </div>

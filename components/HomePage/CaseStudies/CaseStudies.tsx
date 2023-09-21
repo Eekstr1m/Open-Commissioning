@@ -9,9 +9,9 @@ export default function CaseStudies() {
         <div className={s.title}>Client Testimonials</div>
         <NameDiv>John Simpson</NameDiv>
         <div className={s.text}>
-          Open Commissioning’s HR solutions transformed our business,
-          streamlining our workforce and maximizing our talent. They truly
-          understand the industry and deliver top-notch results.
+          Open Commissioning exceeded our expectations. Their attention to
+          detail and commitment to quality transformed our project into a
+          resounding success. We couldn’t have done it without them!
         </div>
       </div>
       <div className={s.more_block}>

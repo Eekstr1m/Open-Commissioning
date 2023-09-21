@@ -20,13 +20,16 @@ export default function Services() {
               objectFit: "cover",
               borderRadius: "10px",
               width: "100%",
+              filter: "brightness(85%)",
             }}
           />
           <div className={s.service_info}>
-            <div className={s.title}>HR Tech Solutions</div>
+            <div className={s.title}>Supervision</div>
             <div className={s.text}>
-              Our HR Tech Solutions automate and streamline your HR processes,
-              freeing up your time to focus on core business objectives.
+              With our seasoned supervisors overseeing your project, you can
+              rest assured that every detail is meticulously attended to. Our
+              supervision services encompass quality control, progress
+              monitoring, and resource management to keep your project on track.
             </div>
             <ReadMore>Read More</ReadMore>
           </div>
@@ -41,13 +44,16 @@ export default function Services() {
               objectFit: "cover",
               borderRadius: "10px",
               width: "100%",
+              filter: "brightness(85%)",
             }}
           />
           <div className={s.service_info}>
-            <div className={s.title}>Talent Management</div>
+            <div className={s.title}>Site Management</div>
             <div className={s.text}>
-              Our Talent Management services help you attract, develop, and
-              retain the best talent to drive your business forward.
+              Effective site management is essential for the success of any
+              project. Open Commissioning offers dedicated site management
+              services to ensure a well-organized, safe, and productive work
+              environment.
             </div>
             <ReadMore>Read More</ReadMore>
           </div>
@@ -62,14 +68,65 @@ export default function Services() {
               objectFit: "cover",
               borderRadius: "10px",
               width: "100%",
+              filter: "brightness(85%)",
             }}
           />
           <div className={s.service_info}>
-            <div className={s.title}>Workforce Analytics</div>
+            <div className={s.title}>Technical Service</div>
             <div className={s.text}>
-              Our Workforce Analytics services provide you with data insights
-              that enable you to optimize your workforce performance and make
-              informed decisions.
+              Our technical experts are equipped to handle any technical
+              challenges that may arise during your project. Whether it’s
+              troubleshooting, system optimization, or maintenance, our team is
+              ready to provide timely and effective solutions.
+            </div>
+            <ReadMore>Read More</ReadMore>
+          </div>
+        </div>
+        {/*  */}
+        <div className={s.service_item}>
+          <Image
+            src={service3}
+            alt=""
+            width={350}
+            height={350}
+            style={{
+              objectFit: "cover",
+              borderRadius: "10px",
+              width: "100%",
+              filter: "brightness(85%)",
+            }}
+          />
+          <div className={s.service_info}>
+            <div className={s.title}>Commissioning</div>
+            <div className={s.text}>
+              Our team of experienced professionals specializes in commissioning
+              services, ensuring that your project is operating as intended. We
+              meticulously test and verify all systems to guarantee optimal
+              functionality, safety, and compliance with industry standards.
+            </div>
+            <ReadMore>Read More</ReadMore>
+          </div>
+        </div>
+        <div className={s.service_item}>
+          <Image
+            src={service3}
+            alt=""
+            width={350}
+            height={350}
+            style={{
+              objectFit: "cover",
+              borderRadius: "10px",
+              width: "100%",
+              filter: "brightness(85%)",
+            }}
+          />
+          <div className={s.service_info}>
+            <div className={s.title}>Vacation Replacement Services</div>
+            <div className={s.text}>
+              When your key personnel are unavailable due to vacations or other
+              commitments, Open Commissioning can step in as a seamless
+              replacement. We offer temporary staffing solutions to ensure
+              continuity in project management and execution.
             </div>
             <ReadMore>Read More</ReadMore>
           </div>

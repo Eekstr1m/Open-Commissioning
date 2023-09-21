@@ -1,10 +1,12 @@
+"use client";
 import Link from "next/link";
 import s from "./Header.module.scss";
 import Button from "../CustomButton/Button";
+import styled from "styled-components";
 
 export default function Header() {
   return (
-    <header className={s.container}>
+    <HeaderContainer>
       <div className={s.wrapper}>
         <Link href="#" className={s.logo}>
           Open Commissioning
@@ -24,6 +26,15 @@ export default function Header() {
           </Link>
         </nav>
       </div>
-    </header>
+    </HeaderContainer>
   );
 }
+
+const HeaderContainer = styled.header`
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  background-color: ${({ theme }) => theme.main};
+
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+`;

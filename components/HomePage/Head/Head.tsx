@@ -11,9 +11,12 @@ export default function Head() {
         <div className={s.info_block}>
           <h1>Get Ahead with Open Commissioning</h1>
           <p className={s.text}>
-            Open Commissioning provides game-changing HR solutions to take your
-            business to the next level. From workforce analytics to talent
-            management, we’ve got you covered.
+            In the dynamic landscape of modern industry, ensuring the efficient
+            functioning of complex systems and facilities is paramount. That’s
+            where Open Commissioning steps in as your trusted partner. We are a
+            company dedicated to delivering top-tier commissioning, supervision,
+            site management, technical service, and vacation replacement
+            services.
           </p>
           <Button>View All Services</Button>
         </div>
@@ -23,7 +26,11 @@ export default function Head() {
             alt=""
             width={450}
             height={450}
-            style={{ objectFit: "cover", borderRadius: "10px" }}
+            style={{
+              objectFit: "cover",
+              borderRadius: "10px",
+              filter: "brightness(85%)",
+            }}
           />
         </div>
       </div>
