@@ -1,0 +1,17 @@
+@import "app/library";
+
+.button {
+  color: $white;
+  background-color: $primary;
+  padding: 15px 40px;
+  border-radius: 7px;
+
+  width: fit-content;
+
+  transition: all 0.2s linear;
+
+  &:hover {
+    color: $white;
+    background-color: $darken_primary;
+  }
+}

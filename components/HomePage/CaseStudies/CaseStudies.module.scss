@@ -1,0 +1,36 @@
+@import "app/library";
+
+/* Case Studies */
+.case_wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 50px 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  gap: 30px;
+}
+.more_block {
+  display: grid;
+  place-items: center;
+}
+
+.client_block {
+  display: grid;
+  gap: 20px;
+}
+.title {
+  font-size: 28px;
+}
+.text {
+  font-weight: 300;
+}
+.more_block {
+  display: grid;
+  gap: 20px;
+}
+.more_text {
+  font-size: 22px;
+  width: clamp(200px, 50%, 90%);
+  text-align: center;
+}

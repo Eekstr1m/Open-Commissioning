@@ -1,0 +1,11 @@
+$site_width: 1200px;
+
+$black: #000;
+$white: #fff;
+$primary: #d8ae5f;
+$darken_primary: darken(
+  $color: $primary,
+  $amount: 20,
+);
+// $bg_primary: #fbf5e9;
+$bg_primary: #fffaf0;

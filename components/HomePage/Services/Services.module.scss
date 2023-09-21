@@ -1,0 +1,32 @@
+/* Our services */
+.wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  margin: 0 auto;
+
+  gap: 30px;
+  padding: 50px 10px;
+}
+.head_title {
+  font-size: 28px;
+  padding: 0 10px;
+}
+.title {
+  font-size: 22px;
+}
+.text {
+  font-weight: 300;
+}
+.service_item {
+  display: grid;
+  gap: 20px;
+}
+.service_info {
+  display: grid;
+  gap: 20px;
+}

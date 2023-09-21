@@ -1,0 +1,12 @@
+@import "app/library";
+
+.form {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}

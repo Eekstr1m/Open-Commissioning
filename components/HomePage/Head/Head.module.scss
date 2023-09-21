@@ -1,0 +1,35 @@
+@import "app/library";
+
+.wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  // place-items: start end;
+
+  gap: 20px;
+
+  padding: 50px 10px;
+}
+.info_block {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  h1 {
+    font-size: calc(40px + (50 - 40) * ((100vw - 320px) / (1920 - 320)));
+  }
+}
+.text {
+  font-weight: 300;
+}
+.image_block {
+  display: grid;
+  place-items: end;
+  img {
+    width: 100%;
+    max-width: 450px;
+    // width: calc(300px + (450 - 300) * ((100vw - 320px) / (1920 - 320)));
+    // height: auto;
+  }
+}
