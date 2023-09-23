@@ -1,15 +1,34 @@
 `use client`;
 import styled from "styled-components";
 import s from "./Footer.module.scss";
+import LogoSVG from "@/assets/logo.svg";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
     <FooterSection>
       <div className={s.content}>
-        <div>&copy; 2023 Open Commissioning All Rights Reserved</div>
-        <div className={s.item}>
-          <p>Privacy Policy</p>
-          <p>Therm of Service</p>
+        <div className={s.top}>
+          <div className={s.nav_block}>
+            <Link href={"#"}>About Us</Link>
+            <Link href={"#"}>Services</Link>
+            <Link href={"#"}>Industries</Link>
+          </div>
+          <Link href={"#"}>
+            <i
+              className="fa-brands fa-linkedin fa-2xl"
+              style={{ color: "#0077b5" }}
+            ></i>
+          </Link>
+          {/* <LogoSVG /> */}
+        </div>
+        <div className={s.bottom}>
+          <div>&copy; 2023 Open Commissioning All Rights Reserved</div>
+          <div className={s.item}>
+            <Link href={"/privacy-policy"}>Privacy Policy</Link>
+            <Link href={"/therms-of-service"}>Therm of Service</Link>
+          </div>
         </div>
       </div>
     </FooterSection>

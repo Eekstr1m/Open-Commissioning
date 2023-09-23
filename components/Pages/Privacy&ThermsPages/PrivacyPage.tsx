@@ -33,12 +33,18 @@ export default function PrivacyPage() {
             <p>We may collect the following types of personal information:</p>
             <p>
               Contact Information: Name, email address, phone number, or other
-              identifiers. Usage Data: Information about your interactions with
-              our website, including IP address, browser type, pages viewed, and
-              access times. Cookies and Tracking Technologies: We may use
-              cookies and similar technologies to enhance your experience on our
-              website. Payment Information: If applicable, we may collect
-              payment and billing information for transactions on our website.
+              identifiers.
+              <br />
+              Usage Data: Information about your interactions with our website,
+              including IP address, browser type, pages viewed, and access
+              times.
+              <br />
+              Cookies and Tracking Technologies: We may use cookies and similar
+              technologies to enhance your experience on our website.
+              <br />
+              Payment Information: If applicable, we may collect payment and
+              billing information for transactions on our website.
+              <br />
               Other Information: Any other information you choose to provide
               voluntarily.
             </p>
@@ -66,12 +72,16 @@ export default function PrivacyPage() {
             <p>We may share your personal information with:</p>
             <p>
               Service Providers: Third-party companies or individuals who assist
-              us in operating our website and providing services. Legal
-              Requirements: To comply with legal obligations, respond to legal
-              requests, or protect our rights. Business Transfers: In connection
-              with a merger, acquisition, or sale of all or a portion of our
-              assets. With Your Consent: When you give us explicit permission to
-              share your information.
+              us in operating our website and providing services.
+              <br />
+              Legal Requirements: To comply with legal obligations, respond to
+              legal requests, or protect our rights.
+              <br />
+              Business Transfers: In connection with a merger, acquisition, or
+              sale of all or a portion of our assets.
+              <br />
+              With Your Consent: When you give us explicit permission to share
+              your information.
             </p>
           </div>
         </div>
@@ -81,11 +91,16 @@ export default function PrivacyPage() {
             <p>You have certain rights regarding your personal information:</p>
             <p>
               Access: You can request access to the personal information we hold
-              about you. Correction: You can request corrections to inaccurate
-              or incomplete data. Deletion: You can request the deletion of your
-              personal information under certain circumstances. Data
-              Portability: You can request the transfer of your data to another
-              party.
+              about you.
+              <br />
+              Correction: You can request corrections to inaccurate or
+              incomplete data.
+              <br />
+              Deletion: You can request the deletion of your personal
+              information under certain circumstances.
+              <br />
+              Data Portability: You can request the transfer of your data to
+              another party.
             </p>
           </div>
         </div>
@@ -115,7 +130,10 @@ export default function PrivacyPage() {
           <div className={s.text}>
             <p>
               If you have any questions or concerns about this Privacy Policy or
-              our practices, please contact us at Phone number: +123456789
+              our practices, please contact us at:
+              <br />
+              Phone number: +123456789
+              <br />
               Email: info@example.com
             </p>
           </div>

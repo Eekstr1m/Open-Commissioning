@@ -109,7 +109,10 @@ export default function ThermsPage() {
           <div className={s.text}>
             <p>
               If you have any questions or concerns about this Privacy Policy or
-              our practices, please contact us at Phone number: +123456789
+              our practices, please contact us at:
+              <br />
+              Phone number: +123456789
+              <br />
               Email: info@example.com
             </p>
           </div>
