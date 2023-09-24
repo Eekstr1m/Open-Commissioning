@@ -11,9 +11,9 @@ export default function Footer() {
       <div className={s.content}>
         <div className={s.top}>
           <div className={s.nav_block}>
-            <Link href={"#"}>About Us</Link>
-            <Link href={"#"}>Services</Link>
-            <Link href={"#"}>Industries</Link>
+            <Link href={"/about-us"}>About Us</Link>
+            <Link href={"/services"}>Services</Link>
+            <Link href={"/industries"}>Industries</Link>
           </div>
           <Link href={"#"}>
             <i

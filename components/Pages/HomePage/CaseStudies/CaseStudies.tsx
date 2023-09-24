@@ -14,12 +14,12 @@ export default function CaseStudies() {
           resounding success. We couldn’t have done it without them!
         </div>
       </div>
-      <div className={s.more_block}>
+      {/* <div className={s.more_block}>
         <div className={s.more_text}>
           Read about how we support our clients projects
         </div>
         <Button>Case Studies</Button>
-      </div>
+      </div> */}
     </section>
   );
 }

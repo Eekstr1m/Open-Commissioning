@@ -4,8 +4,13 @@
   margin: 0 auto;
 }
 .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  // display: grid;
+  // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+  flex-wrap: wrap;
 
   margin: 0 auto;
 
@@ -23,10 +28,18 @@
   font-weight: 300;
 }
 .service_item {
+  // width: fit-content;
+  max-width: 370px;
   display: grid;
   gap: 20px;
 }
 .service_info {
   display: grid;
   gap: 20px;
+}
+
+@media (max-width: 950px) {
+  .service_item {
+    max-width: fit-content;
+  }
 }

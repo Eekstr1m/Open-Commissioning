@@ -4,7 +4,6 @@ import s from "./Header.module.scss";
 import Button from "../CustomButton/Button";
 import styled from "styled-components";
 import LogoSVG from "@/assets/logo.svg";
-import Image from "next/image";
 
 export default function Header() {
   return (
@@ -15,9 +14,6 @@ export default function Header() {
           Open Commissioning
         </Link>
         <input type="checkbox" id="menu-toggle" className={s.menu_toggle} />
-        {/* <label htmlFor="menu-toggle" className={s.menu_icon}>
-          &#9776;
-        </label> */}
         <label htmlFor="menu-toggle" className={s.menu}>
           <span className={s.bar}>
             <i className="fa-solid fa-bars fa-xl"></i>
@@ -30,8 +26,8 @@ export default function Header() {
           <Link href="/services" className={s.nav_item}>
             Services
           </Link>
-          <Link href="#" className={s.nav_item}>
-            Case Studies
+          <Link href="/industries" className={s.nav_item}>
+            Industries
           </Link>
           <Link href="#" className={s.nav_item}>
             About Us

@@ -33,3 +33,12 @@
     // height: auto;
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    grid-template-columns: none;
+  }
+  .image_block {
+    place-items: center;
+  }
+}
