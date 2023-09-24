@@ -1,11 +1,10 @@
-"use client";
 import { ThemeChangeProvider } from "@/providers/theme-provider";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter, Nunito } from "next/font/google";
 import Head from "next/head";
 import Script from "next/script";
-import { createGlobalStyle, ThemeProvider } from "styled-components";
+import GlobalStyleComponent from "@/components/GlobalStyle/GlobalStyle";
 
 const inter = Inter({ subsets: ["latin"] });
 const nunito = Nunito({ subsets: ["latin"] });
@@ -22,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <ThemeChangeProvider>
-      <GlobalStyle $lightTheme={false} />
+      <GlobalStyleComponent />
       <html lang="en">
         <Script
           src="https://kit.fontawesome.com/d37f4b642f.js"
@@ -33,10 +32,3 @@ export default function RootLayout({
     </ThemeChangeProvider>
   );
 }
-
-const GlobalStyle = createGlobalStyle<{ $lightTheme?: boolean }>`
-  body {
-    color: ${(props) => (props.$lightTheme ? "black" : "white")};
-    background: ${({ theme }) => theme.main};
-  }
-`;
