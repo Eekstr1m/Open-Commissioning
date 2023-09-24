@@ -17,8 +17,8 @@ export default function Footer() {
           </div>
           <Link href={"#"}>
             <i
-              className="fa-brands fa-linkedin fa-2xl"
-              style={{ color: "#0077b5" }}
+              className="fa-brands fa-linkedin-in fa-2xl"
+              style={{ color: "#fff" }}
             ></i>
           </Link>
           {/* <LogoSVG /> */}

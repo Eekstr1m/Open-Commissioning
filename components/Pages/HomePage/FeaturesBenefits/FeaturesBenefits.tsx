@@ -49,7 +49,7 @@ export default function FeaturesBenefits() {
 }
 
 const Icon = styled.i`
-  color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.darken_primary};
 `;
 
 const Container = styled.section`

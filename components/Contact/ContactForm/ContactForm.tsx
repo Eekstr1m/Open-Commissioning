@@ -3,6 +3,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import s from "./ContactForm.module.scss";
 import styled from "styled-components";
+
 export default function ContactForm() {
   const formik = useFormik({
     initialValues: {
@@ -107,7 +108,7 @@ const TextArea = styled.textarea`
 
 const Button = styled.button`
   color: ${({ theme }) => theme.main};
-  background-color: ${({ theme }) => theme.primary};
+  background-color: ${({ theme }) => theme.button};
   padding: 15px 40px;
 
   border-radius: 7px;
@@ -118,6 +119,6 @@ const Button = styled.button`
 
   &:hover {
     color: ${({ theme }) => theme.main};
-    background-color: ${({ theme }) => theme.darken_primary};
+    background-color: ${({ theme }) => theme.hover};
   }
 `;

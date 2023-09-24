@@ -1,5 +1,5 @@
 import Link from "next/link";
-import s from "./Button.module.scss";
+import styled from "styled-components";
 
 export default function Button({
   children,
@@ -11,8 +11,24 @@ export default function Button({
   style?: React.CSSProperties;
 }) {
   return (
-    <Link href={href} className={s.button} style={style}>
+    <ButtonColor href={href} style={style}>
       {children}
-    </Link>
+    </ButtonColor>
   );
 }
+
+const ButtonColor = styled.a`
+  color: ${({ theme }) => theme.main};
+  background-color: ${({ theme }) => theme.button};
+  padding: 15px 40px;
+  border-radius: 7px;
+
+  width: fit-content;
+
+  transition: all 0.2s linear;
+
+  &:hover {
+    color: ${({ theme }) => theme.main};
+    background-color: ${({ theme }) => theme.hover};
+  }
+`;
