@@ -52,13 +52,6 @@ export default function IndustriesDesc() {
 
           <div className={s.item}>
             <div className={s.icon}>
-              <Icon className="fa-solid fa-hospital"></Icon>
-            </div>
-            <div className={s.title}>Healthcare</div>
-          </div>
-
-          <div className={s.item}>
-            <div className={s.icon}>
               <Icon className="fa-solid fa-gauge-high"></Icon>
             </div>
             <div className={s.title}>Automation</div>
@@ -66,16 +59,9 @@ export default function IndustriesDesc() {
 
           <div className={s.item}>
             <div className={s.icon}>
-              <Icon className="fa-solid fa-plane"></Icon>
+              <Icon className="fa-solid fa-microchip"></Icon>
             </div>
-            <div className={s.title}>Aerospace and Defense</div>
-          </div>
-
-          <div className={s.item}>
-            <div className={s.icon}>
-              <Icon className="fa-solid fa-flask-vial"></Icon>
-            </div>
-            <div className={s.title}>Biotechnology</div>
+            <div className={s.title}>Technology and IT</div>
           </div>
 
           <div className={s.item}>
@@ -99,6 +85,6 @@ const ServicesSection = styled.section`
 const Icon = styled.i`
   font-size: 50px;
   margin-bottom: 20px;
-  color: #7da3c1;
+  /* color: #7da3c1; */
   filter: drop-shadow(0 0 2px ${({ theme }) => theme.darken_primary});
 `;

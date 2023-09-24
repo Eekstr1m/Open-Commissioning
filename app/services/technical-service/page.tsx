@@ -1,13 +1,13 @@
 "use client";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
-import ThermsPage from "@/components/Pages/Privacy&ThermsPages/ThermsPage";
+import TechnicalServicePage from "@/components/Pages/ServicesPage/Pages/TechnicalServicePage/TechnicalServicePage";
 
-export default function Home() {
+export default function Page() {
   return (
     <main>
       <Header />
-      <ThermsPage />
+      <TechnicalServicePage />
       <Footer />
     </main>
   );

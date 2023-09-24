@@ -11,10 +11,10 @@ export default function ServicesBody() {
     <section className={s.container}>
       <div className={s.content}>
         <div className={s.content_wrapper}>
+          <p className={s.title}>
+            Customized and compliant engineering solutions
+          </p>
           <p>
-            <p className={s.title}>
-              Customized and compliant engineering solutions
-            </p>
             Open Commissioning is your trusted partner in delivering tailored
             and compliant solutions across a range of technical disciplines. Our
             global presence, combined with our extensive expertise and highly
@@ -36,7 +36,7 @@ export default function ServicesBody() {
             Got a challenging project on the horizon? Contact us today.
           </Contact>
 
-          <Button>Contact Us</Button>
+          <Button href="/contact-us">Contact Us</Button>
         </div>
       </div>
       <div className={s.image}>

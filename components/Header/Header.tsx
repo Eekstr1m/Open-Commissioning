@@ -10,8 +10,8 @@ export default function Header() {
     <HeaderContainer>
       <div className={s.wrapper}>
         <Link href="/" className={s.logo}>
-          <LogoSVG />
-          Open Commissioning
+          <LogoSVG width="60px" height="60px" className={s.test} />
+          <p className={s.logo_text}>Open Commissioning</p>
         </Link>
         <input type="checkbox" id="menu-toggle" className={s.menu_toggle} />
         <label htmlFor="menu-toggle" className={s.menu}>
@@ -22,17 +22,55 @@ export default function Header() {
             <i className="fa-solid fa-xmark fa-2xl"></i>
           </span>
         </label>
+
         <NavBar className={s.nav}>
-          <Link href="/services" className={s.nav_item}>
-            Services
-          </Link>
-          <Link href="/industries" className={s.nav_item}>
-            Industries
-          </Link>
-          <Link href="#" className={s.nav_item}>
-            About Us
-          </Link>
-          <Button>Contact</Button>
+          <ul className={s.nav__list}>
+            <li className={s.nav__item}>
+              <a href="#" className={s.nav__link}>
+                <Link href="/services" className={s.nav_item}>
+                  Services
+                  <i className="fa-solid fa-caret-down"></i>
+                </Link>
+              </a>
+
+              <ul className={s.subnav}>
+                <li className={s.subnav__link}>
+                  <Link href={"/services/supervision"}>Supervision</Link>
+                </li>
+                <li className={s.subnav__link}>
+                  <Link href={"/services/commissioning"}>Commissioning</Link>
+                </li>
+                <li className={s.subnav__link}>
+                  <Link href={"/services/site-management"}>
+                    Site Management
+                  </Link>
+                </li>
+                <li className={s.subnav__link}>
+                  <Link href={"/services/technical-service"}>
+                    Technical Service
+                  </Link>
+                </li>
+                <li className={s.subnav__link}>
+                  <Link href={"/services/vacation-replacement-services"}>
+                    Vacation Replacement Services
+                  </Link>
+                </li>
+              </ul>
+            </li>
+            <li className={s.nav__item}>
+              <Link href="/industries" className={s.nav__link}>
+                Industries
+              </Link>
+            </li>
+            <li className={s.nav__item}>
+              <Link href="/about-us" className={s.nav__link}>
+                About Us
+              </Link>
+            </li>
+            <li className={s.nav__item}>
+              <Button href="/contact-us">Contact</Button>
+            </li>
+          </ul>
         </NavBar>
       </div>
     </HeaderContainer>
@@ -40,6 +78,7 @@ export default function Header() {
 }
 
 const HeaderContainer = styled.header`
+  font-weight: 700;
   width: 100%;
   position: fixed;
   z-index: 9999;

@@ -20,7 +20,7 @@ export default function ServicesDesc() {
               <Icon className="fa-solid fa-industry"></Icon>
             </div>
             <div className={s.title}>Supervision</div>
-            <Button>Read More</Button>
+            <Button href="/services/supervision">Read More</Button>
           </div>
 
           <div className={s.item}>
@@ -28,7 +28,7 @@ export default function ServicesDesc() {
               <Icon className="fa-solid fa-screwdriver-wrench"></Icon>
             </div>
             <div className={s.title}>Commissioning</div>
-            <Button>Read More</Button>
+            <Button href="/services/commissioning">Read More</Button>
           </div>
 
           <div className={s.item}>
@@ -36,7 +36,7 @@ export default function ServicesDesc() {
               <Icon className="fa-solid fa-helmet-safety"></Icon>
             </div>
             <div className={s.title}>Site Management</div>
-            <Button>Read More</Button>
+            <Button href="/services/site-management">Read More</Button>
           </div>
 
           <div className={s.item}>
@@ -44,7 +44,7 @@ export default function ServicesDesc() {
               <Icon className="fa-solid fa-gears"></Icon>
             </div>
             <div className={s.title}>Technical Service</div>
-            <Button>Read More</Button>
+            <Button href="/services/technical-service">Read More</Button>
           </div>
 
           <div className={s.item}>
@@ -52,7 +52,9 @@ export default function ServicesDesc() {
               <Icon className="fa-solid fa-users-gear"></Icon>
             </div>
             <div className={s.title}>Vacation Replacement Services</div>
-            <Button>Read More</Button>
+            <Button href="/services/vacation-replacement-services">
+              Read More
+            </Button>
           </div>
         </div>
       </div>
@@ -69,6 +71,6 @@ const ServicesSection = styled.section`
 const Icon = styled.i`
   font-size: 50px;
   margin-bottom: 20px;
-  color: #7da3c1;
+  /* color: #7da3c1; */
   filter: drop-shadow(0 0 2px ${({ theme }) => theme.darken_primary});
 `;

@@ -18,7 +18,7 @@ export default function Head() {
             site management, technical service, and vacation replacement
             services.
           </p>
-          <Button>View All Services</Button>
+          <Button href={"/services"}>View All Services</Button>
         </div>
         <div className={s.image_block}>
           <Image

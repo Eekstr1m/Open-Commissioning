@@ -4,12 +4,14 @@ import ServicesBody from "./ServicesBody/ServicesBody";
 import ServicesDesc from "./ServicesDesc/ServicesDesc";
 import s from "./ServicesPage.module.scss";
 import ServicesBlock from "./ServicesBlock/ServicesBlock";
-import ServicesHead from "./ServicesHead/ServicesHead";
+import HeadBackground from "../../HeadBackground/HeadBackground";
+
+import bg from "@/assets/bg.jpg";
 
 export default function ServicesPage() {
   return (
     <section className={s.container}>
-      <ServicesHead />
+      <HeadBackground url={bg.src} title={"Services"} />
       <ServicesDesc />
       <ServicesBody />
       <ServicesBlock />
