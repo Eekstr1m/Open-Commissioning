@@ -1,5 +1,6 @@
 "use client";
 import styled from "styled-components";
+import LogoSVG from "@/assets/logo.svg";
 
 export default function HeadBackground({
   url,
@@ -9,16 +10,22 @@ export default function HeadBackground({
   title: string;
 }) {
   return (
-    <Wrapper>
-      <Container $url={url} />
-      <Title>
-        <h1>{title}</h1>
-      </Title>
-    </Wrapper>
+    <div>
+      <Wrapper>
+        <Container $url={url}></Container>
+        <Title>
+          <h1>{title}</h1>
+        </Title>
+      </Wrapper>
+      <LogoWrapper>
+        <LogoSVG width={"300px"} height={"300px"} />
+      </LogoWrapper>
+    </div>
   );
 }
 
 const Wrapper = styled.section`
+  max-width: 100vw;
   position: relative;
 `;
 
@@ -39,4 +46,13 @@ const Title = styled.div`
 
   font-weight: 600;
   font-size: 28px;
+`;
+
+const LogoWrapper = styled.div`
+  position: absolute;
+  top: 60px;
+  left: 30px;
+  /* right: 30px; */
+  /* left: -50px; */
+  z-index: 20;
 `;

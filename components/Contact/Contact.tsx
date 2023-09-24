@@ -35,5 +35,5 @@ const ContactSection = styled.section`
 `;
 
 const InfoDesc = styled.p`
-  color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.darken_primary};
 `;

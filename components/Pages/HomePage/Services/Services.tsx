@@ -6,6 +6,7 @@ import service3 from "@/assets/4.jpg";
 import service4 from "@/assets/5.jpg";
 import service5 from "@/assets/6.jpg";
 import styled from "styled-components";
+import Link from "next/link";
 
 export default function Services() {
   return (
@@ -33,7 +34,9 @@ export default function Services() {
               supervision services encompass quality control, progress
               monitoring, and resource management to keep your project on track.
             </div>
-            <ReadMore>Read More</ReadMore>
+            <ReadMore>
+              <Link href={"/services/supervision"}>Read More</Link>
+            </ReadMore>
           </div>
         </div>
         <div className={s.service_item}>
@@ -57,7 +60,9 @@ export default function Services() {
               services to ensure a well-organized, safe, and productive work
               environment.
             </div>
-            <ReadMore>Read More</ReadMore>
+            <ReadMore>
+              <Link href={"/services/site-management"}>Read More</Link>
+            </ReadMore>
           </div>
         </div>
         <div className={s.service_item}>
@@ -81,7 +86,9 @@ export default function Services() {
               troubleshooting, system optimization, or maintenance, our team is
               ready to provide timely and effective solutions.
             </div>
-            <ReadMore>Read More</ReadMore>
+            <ReadMore>
+              <Link href={"/services/technical-service"}>Read More</Link>
+            </ReadMore>
           </div>
         </div>
         {/*  */}
@@ -106,7 +113,9 @@ export default function Services() {
               meticulously test and verify all systems to guarantee optimal
               functionality, safety, and compliance with industry standards.
             </div>
-            <ReadMore>Read More</ReadMore>
+            <ReadMore>
+              <Link href={"/services/commissioning"}>Read More</Link>
+            </ReadMore>
           </div>
         </div>
         <div className={s.service_item}>
@@ -130,7 +139,11 @@ export default function Services() {
               replacement. We offer temporary staffing solutions to ensure
               continuity in project management and execution.
             </div>
-            <ReadMore>Read More</ReadMore>
+            <ReadMore>
+              <Link href={"/services/vacation-replacement-services"}>
+                Read More
+              </Link>
+            </ReadMore>
           </div>
         </div>
       </div>
@@ -142,4 +155,8 @@ const ReadMore = styled.div`
   font-size: 14px;
   color: ${({ theme }) => theme.darken_primary};
   font-weight: 300;
+
+  &:hover {
+    color: ${({ theme }) => theme.hover};
+  }
 `;

@@ -9,7 +9,11 @@ export default function Head() {
     <HeadSection>
       <div className={s.wrapper}>
         <div className={s.info_block}>
-          <h1>Get Ahead with Open Commissioning</h1>
+          <p className={s.head_title}>
+            Get ahead with
+            <br />
+            OPEN COMMISSIONING
+          </p>
           <p className={s.text}>
             In the dynamic landscape of modern industry, ensuring the efficient
             functioning of complex systems and facilities is paramount. That’s

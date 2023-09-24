@@ -72,5 +72,5 @@ const Icon = styled.i`
   font-size: 50px;
   margin-bottom: 20px;
   /* color: #7da3c1; */
-  filter: drop-shadow(0 0 2px ${({ theme }) => theme.darken_primary});
+  filter: drop-shadow(0 0 2px ${({ theme }) => theme.main});
 `;

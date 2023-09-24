@@ -27,50 +27,50 @@ export default function Header() {
         <NavBar className={s.nav}>
           <ul className={s.nav__list}>
             <li className={s.nav__item}>
-              <a href="#" className={s.nav__link}>
+              <NavItem className={s.nav__link}>
                 <Link href="/services" className={s.nav_item}>
                   Services
                   <i className="fa-solid fa-caret-down"></i>
                 </Link>
-              </a>
+              </NavItem>
 
-              <ul className={s.subnav}>
-                <li className={s.subnav__link}>
+              <SubNav className={s.subnav}>
+                <NavItem className={s.subnav__link}>
                   <Link href={"/services/supervision"}>Supervision</Link>
-                </li>
-                <li className={s.subnav__link}>
+                </NavItem>
+                <NavItem className={s.subnav__link}>
                   <Link href={"/services/commissioning"}>Commissioning</Link>
-                </li>
-                <li className={s.subnav__link}>
+                </NavItem>
+                <NavItem className={s.subnav__link}>
                   <Link href={"/services/site-management"}>
                     Site Management
                   </Link>
-                </li>
-                <li className={s.subnav__link}>
+                </NavItem>
+                <NavItem className={s.subnav__link}>
                   <Link href={"/services/technical-service"}>
                     Technical Service
                   </Link>
-                </li>
-                <li className={s.subnav__link}>
+                </NavItem>
+                <NavItem className={s.subnav__link}>
                   <Link href={"/services/vacation-replacement-services"}>
                     Vacation Replacement Services
                   </Link>
-                </li>
-              </ul>
+                </NavItem>
+              </SubNav>
             </li>
-            <li className={s.nav__item}>
+            <NavItem className={s.nav__item}>
               <Link href="/industries" className={s.nav__link}>
                 Industries
               </Link>
-            </li>
-            <li className={s.nav__item}>
+            </NavItem>
+            <NavItem className={s.nav__item}>
               <Link href="/about-us" className={s.nav__link}>
                 About Us
               </Link>
-            </li>
-            <li className={s.nav__item}>
+            </NavItem>
+            <NavItem className={s.nav__item}>
               <Button href="/contact-us">Contact</Button>
-            </li>
+            </NavItem>
           </ul>
         </NavBar>
       </div>
@@ -85,9 +85,23 @@ const HeaderContainer = styled.header`
   z-index: 9999;
   background-color: ${({ theme }) => theme.main};
 
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  border-top: 2px #fff solid;
+
+  box-shadow: 0px 3px 10px 0px rgba(255, 255, 255, 0.2);
 `;
 
 const NavBar = styled.nav`
   background-color: ${({ theme }) => theme.main};
+`;
+
+const NavItem = styled.li`
+  transition: color 0.2s linear;
+  &:hover {
+    color: ${({ theme }) => theme.primary};
+  }
+`;
+
+const SubNav = styled.ul`
+  background-color: ${({ theme }) => theme.main};
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
 `;
