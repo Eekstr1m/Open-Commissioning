@@ -13,6 +13,7 @@ export default function Header() {
           <LogoSVG width="60px" height="60px" className={s.test} />
           <p className={s.logo_text}>Open Commissioning</p>
         </Link>
+        <span className={s.phrase}>Results based on experience</span>
         <input type="checkbox" id="menu-toggle" className={s.menu_toggle} />
         <label htmlFor="menu-toggle" className={s.menu}>
           <span className={s.bar}>
