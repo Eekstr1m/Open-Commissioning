@@ -3,12 +3,12 @@ import { lightTheme, themeI } from "@/common-data/theme/theme";
 import { createContext, useContext, useState } from "react";
 import { ThemeProvider, createGlobalStyle } from "styled-components";
 
-const GlobalStyle = createGlobalStyle<{ $whiteColor?: boolean; }>`
+const GlobalStyle = createGlobalStyle<{ $lightTheme?: boolean }>`
   body {
-    color: ${props => (props.$whiteColor ? 'white' : 'black')};
-    background-color: ${props => (props.$whiteColor ? 'black': 'white' )};
+    color: ${(props) => (props.$lightTheme ? "black" : "white")};
+    background: ${({ theme }) => theme.main};
   }
-`
+`;
 
 interface ThemeContextI {
   selectedTheme: themeI;
@@ -32,7 +32,9 @@ export function ThemeChangeProvider({
   return (
     <ThemeChanging.Provider value={{ selectedTheme, setSelectedTheme }}>
       <ThemeProvider theme={selectedTheme}>
-      <GlobalStyle $whiteColor={false} />{children}</ThemeProvider>
+        <GlobalStyle $lightTheme={false} />
+        {children}
+      </ThemeProvider>
     </ThemeChanging.Provider>
   );
 }

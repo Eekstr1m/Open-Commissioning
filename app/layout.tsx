@@ -4,7 +4,6 @@ import type { Metadata } from "next";
 import { Inter, Nunito } from "next/font/google";
 import Head from "next/head";
 import Script from "next/script";
-import GlobalStyleComponent from "@/components/GlobalStyle/GlobalStyle";
 
 const inter = Inter({ subsets: ["latin"] });
 const nunito = Nunito({ subsets: ["latin"] });
@@ -21,7 +20,6 @@ export default function RootLayout({
 }) {
   return (
     <ThemeChangeProvider>
-      <GlobalStyleComponent />
       <html lang="en">
         <Script
           src="https://kit.fontawesome.com/d37f4b642f.js"
