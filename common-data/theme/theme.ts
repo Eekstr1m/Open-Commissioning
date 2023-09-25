@@ -1,8 +1,8 @@
 export type themeI = {
   name: string;
   main: string;
-  black: string;
-  white: string;
+  button: string;
+  hover: string;
   primary: string;
   darken_primary: string;
   bg_primary: string;
