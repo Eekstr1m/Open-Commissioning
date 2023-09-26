@@ -4,75 +4,94 @@ import s from "./Header.module.scss";
 import Button from "../CustomButton/Button";
 import styled from "styled-components";
 import LogoSVG from "@/assets/logo.svg";
+import { useThemeChange } from "@/providers/theme-provider";
+import { useCookies } from "react-cookie";
 
 export default function Header() {
+  const { isLightTheme, setIsLightTheme } = useThemeChange();
+  const [cookies, setCookie] = useCookies(["isLightTheme"]);
+
+  const clickHandler = () => {
+    setIsLightTheme((prev) => !prev);
+    setCookie("isLightTheme", !isLightTheme, { maxAge: 864000000 });
+  };
   return (
     <HeaderContainer>
       <div className={s.wrapper}>
         <Link href="/" className={s.logo}>
           <LogoSVG width="60px" height="60px" className={s.test} />
           <p className={s.logo_text}>Open Commissioning</p>
+          <span className={s.phrase}>Results based on experience</span>
         </Link>
-        <span className={s.phrase}>Results based on experience</span>
-        <input type="checkbox" id="menu-toggle" className={s.menu_toggle} />
-        <label htmlFor="menu-toggle" className={s.menu}>
-          <span className={s.bar}>
-            <i className="fa-solid fa-bars fa-xl"></i>
-          </span>
-          <span className={s.close}>
-            <i className="fa-solid fa-xmark fa-2xl"></i>
-          </span>
-        </label>
 
-        <NavBar className={s.nav}>
-          <ul className={s.nav__list}>
-            <li className={s.nav__item}>
-              <NavItem className={s.nav__link}>
-                <Link href="/services" className={s.nav_item}>
-                  Services
-                  <i className="fa-solid fa-caret-down"></i>
+        <div className={s.nav_wrapper}>
+          <NavBar className={s.nav}>
+            <ul className={s.nav__list}>
+              <li className={s.nav__item}>
+                <NavItem className={s.nav__link}>
+                  <Link href="/services" className={s.nav_item}>
+                    Services
+                    <i className="fa-solid fa-caret-down"></i>
+                  </Link>
+                </NavItem>
+
+                <SubNav className={s.subnav}>
+                  <NavItem className={s.subnav__link}>
+                    <Link href={"/services/supervision"}>Supervision</Link>
+                  </NavItem>
+                  <NavItem className={s.subnav__link}>
+                    <Link href={"/services/commissioning"}>Commissioning</Link>
+                  </NavItem>
+                  <NavItem className={s.subnav__link}>
+                    <Link href={"/services/site-management"}>
+                      Site Management
+                    </Link>
+                  </NavItem>
+                  <NavItem className={s.subnav__link}>
+                    <Link href={"/services/technical-service"}>
+                      Technical Service
+                    </Link>
+                  </NavItem>
+                  <NavItem className={s.subnav__link}>
+                    <Link href={"/services/vacation-replacement-services"}>
+                      Vacation Replacement Services
+                    </Link>
+                  </NavItem>
+                </SubNav>
+              </li>
+              <NavItem className={s.nav__item}>
+                <Link href="/industries" className={s.nav__link}>
+                  Industries
                 </Link>
               </NavItem>
+              <NavItem className={s.nav__item}>
+                <Link href="/about-us" className={s.nav__link}>
+                  About Us
+                </Link>
+              </NavItem>
+              <NavItem className={s.nav__item}>
+                <Button href="/contact-us">Contact</Button>
+              </NavItem>
+            </ul>
+          </NavBar>
 
-              <SubNav className={s.subnav}>
-                <NavItem className={s.subnav__link}>
-                  <Link href={"/services/supervision"}>Supervision</Link>
-                </NavItem>
-                <NavItem className={s.subnav__link}>
-                  <Link href={"/services/commissioning"}>Commissioning</Link>
-                </NavItem>
-                <NavItem className={s.subnav__link}>
-                  <Link href={"/services/site-management"}>
-                    Site Management
-                  </Link>
-                </NavItem>
-                <NavItem className={s.subnav__link}>
-                  <Link href={"/services/technical-service"}>
-                    Technical Service
-                  </Link>
-                </NavItem>
-                <NavItem className={s.subnav__link}>
-                  <Link href={"/services/vacation-replacement-services"}>
-                    Vacation Replacement Services
-                  </Link>
-                </NavItem>
-              </SubNav>
-            </li>
-            <NavItem className={s.nav__item}>
-              <Link href="/industries" className={s.nav__link}>
-                Industries
-              </Link>
-            </NavItem>
-            <NavItem className={s.nav__item}>
-              <Link href="/about-us" className={s.nav__link}>
-                About Us
-              </Link>
-            </NavItem>
-            <NavItem className={s.nav__item}>
-              <Button href="/contact-us">Contact</Button>
-            </NavItem>
-          </ul>
-        </NavBar>
+          <div onClick={clickHandler}>
+            {isLightTheme ? (
+              <i className="fa-regular fa-moon fa-xl"></i>
+            ) : (
+              <i className="fa-regular fa-sun fa-xl"></i>
+            )}
+          </div>
+          <input type="checkbox" id="menu-toggle" className={s.menu_toggle} />
+          <label htmlFor="menu-toggle" className={s.menu}>
+            <span className={s.bar}>
+              <i className="fa-solid fa-bars fa-xl"></i>
+            </span>
+            <span className={s.close}>
+              <i className="fa-solid fa-xmark fa-2xl"></i>
+            </span>
+          </label>
+        </div>
       </div>
     </HeaderContainer>
   );
@@ -103,5 +122,4 @@ const NavItem = styled.li`
 
 const SubNav = styled.ul`
   background-color: ${({ theme }) => theme.main};
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
 `;

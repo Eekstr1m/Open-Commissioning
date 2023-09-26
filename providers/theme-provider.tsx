@@ -1,7 +1,8 @@
 "use client";
-import { lightTheme, themeI } from "@/common-data/theme/theme";
-import { createContext, useContext, useState } from "react";
+import { darkTheme, lightTheme, themeI } from "@/common-data/theme/theme";
+import { createContext, useContext, useEffect, useState } from "react";
 import { ThemeProvider, createGlobalStyle } from "styled-components";
+import { useCookies } from "react-cookie";
 
 const GlobalStyle = createGlobalStyle<{ $lightTheme?: boolean }>`
   body {
@@ -11,13 +12,13 @@ const GlobalStyle = createGlobalStyle<{ $lightTheme?: boolean }>`
 `;
 
 interface ThemeContextI {
-  selectedTheme: themeI;
-  setSelectedTheme: React.Dispatch<React.SetStateAction<themeI>>;
+  isLightTheme: boolean;
+  setIsLightTheme: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const initialUserState = {
-  selectedTheme: lightTheme,
-  setSelectedTheme: () => {},
+  isLightTheme: true,
+  setIsLightTheme: () => {},
 } as ThemeContextI;
 
 const ThemeChanging = createContext(initialUserState);
@@ -27,12 +28,19 @@ export function ThemeChangeProvider({
 }: {
   children: React.ReactNode;
 }) {
-  const [selectedTheme, setSelectedTheme] = useState(lightTheme);
+  const [cookies, setCookie] = useCookies(["isLightTheme"]);
+  useEffect(() => {
+    if (cookies.isLightTheme === undefined) {
+      setCookie("isLightTheme", true, { maxAge: 864000000 });
+    }
+  }, [cookies.isLightTheme, setCookie]);
+
+  const [isLightTheme, setIsLightTheme] = useState(cookies.isLightTheme);
 
   return (
-    <ThemeChanging.Provider value={{ selectedTheme, setSelectedTheme }}>
-      <ThemeProvider theme={selectedTheme}>
-        <GlobalStyle $lightTheme={false} />
+    <ThemeChanging.Provider value={{ isLightTheme, setIsLightTheme }}>
+      <ThemeProvider theme={isLightTheme ? lightTheme : darkTheme}>
+        <GlobalStyle $lightTheme={isLightTheme} />
         {children}
       </ThemeProvider>
     </ThemeChanging.Provider>

@@ -8,22 +8,28 @@ export type themeI = {
   bg_primary: string;
 };
 
-// export const lightTheme = {
-//   name: "light-theme",
-//   main: "#fff",
-//   black: "#000",
-//   white: "#fff",
-//   primary: "#d8ae5f",
-//   darken_primary: "#a87c29",
-//   bg_primary: "#fffaf0",
-// };
-
 export const lightTheme = {
+  name: "light-theme",
+  main: "#fff",
+  // button: "#d8ae5f",
+  button: "#f08d0b", // orange
+
+  hover: "#a87c29", //remake
+  primary: "#d8ae5f",
+  darken_primary: "#a87c29",
+  // bg_primary: "#fffaf0",
+  bg_primary: "#fff",
+  orange: "#f08d0b",
+};
+
+export const darkTheme = {
   name: "dark-theme",
   main: "#0f0f0f",
   button: "#fff",
+  // button: "#f08d0b",
   hover: "#6c757d",
   primary: "#6c757d",
   darken_primary: "#ced4da",
   bg_primary: "#393939",
+  orange: "#f08d0b",
 };

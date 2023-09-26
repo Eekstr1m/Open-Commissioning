@@ -19,56 +19,56 @@ export default function IndustriesDesc() {
             <div className={s.icon}>
               <Icon className="fa-solid fa-bolt"></Icon>
             </div>
-            <div className={s.title}>Power and Utilities</div>
+            <Title className={s.title}>Power and Utilities</Title>
           </div>
 
           <div className={s.item}>
             <div className={s.icon}>
               <Icon className="fa-solid fa-toolbox"></Icon>
             </div>
-            <div className={s.title}>Manufacturing</div>
+            <Title className={s.title}>Manufacturing</Title>
           </div>
 
           <div className={s.item}>
             <div className={s.icon}>
               <Icon className="fa-solid fa-trowel-bricks"></Icon>
             </div>
-            <div className={s.title}>Construction</div>
+            <Title className={s.title}>Construction</Title>
           </div>
 
           <div className={s.item}>
             <div className={s.icon}>
               <Icon className="fa-solid fa-oil-well"></Icon>
             </div>
-            <div className={s.title}>Oil and Gas</div>
+            <Title className={s.title}>Oil and Gas</Title>
           </div>
 
           <div className={s.item}>
             <div className={s.icon}>
               <Icon className="fa-solid fa-wheat-awn"></Icon>
             </div>
-            <div className={s.title}>Agriculture</div>
+            <Title className={s.title}>Agriculture</Title>
           </div>
 
           <div className={s.item}>
             <div className={s.icon}>
               <Icon className="fa-solid fa-gauge-high"></Icon>
             </div>
-            <div className={s.title}>Automation</div>
+            <Title className={s.title}>Automation</Title>
           </div>
 
           <div className={s.item}>
             <div className={s.icon}>
               <Icon className="fa-solid fa-microchip"></Icon>
             </div>
-            <div className={s.title}>Technology and IT</div>
+            <Title className={s.title}>Technology and IT</Title>
           </div>
 
           <div className={s.item}>
             <div className={s.icon}>
               <Icon className="fa-brands fa-envira"></Icon>
             </div>
-            <div className={s.title}>Environment</div>
+            <Title className={s.title}>Environment</Title>
           </div>
         </div>
       </div>
@@ -86,5 +86,10 @@ const Icon = styled.i`
   font-size: 50px;
   margin-bottom: 20px;
   /* color: #7da3c1; */
+  color: ${({ theme }) => theme.orange};
   filter: drop-shadow(0 0 2px ${({ theme }) => theme.main});
+`;
+
+const Title = styled.div`
+  /* color: ${({ theme }) => theme.orange}; */
 `;

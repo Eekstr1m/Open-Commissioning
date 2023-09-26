@@ -19,6 +19,7 @@ export default function HeadBackground({
       </Wrapper>
       <LogoWrapper>
         <LogoSVG width={"300px"} height={"300px"} />
+        {/* <LogoSVG width={"200px"} height={"200px"} /> */}
       </LogoWrapper>
     </div>
   );
@@ -36,7 +37,7 @@ const Container = styled.div<{ $url: string }>`
 
   background: url(${(p) => p.$url}) no-repeat center;
   background-size: cover;
-  filter: brightness(30%);
+  filter: brightness(40%);
 `;
 
 const Title = styled.div`
@@ -50,8 +51,17 @@ const Title = styled.div`
 
 const LogoWrapper = styled.div`
   position: absolute;
+
   top: 60px;
   left: 30px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  /* top: calc(50% - 100px);
+  left: calc(50% - 100px); */
+
   /* right: 30px; */
   /* left: -50px; */
   z-index: 20;
