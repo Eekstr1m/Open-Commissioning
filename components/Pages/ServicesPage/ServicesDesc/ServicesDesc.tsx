@@ -71,6 +71,6 @@ const ServicesSection = styled.section`
 const Icon = styled.i`
   font-size: 50px;
   margin-bottom: 20px;
-  /* color: #7da3c1; */
+  color: ${({ theme }) => theme.orange};
   filter: drop-shadow(0 0 2px ${({ theme }) => theme.main});
 `;
