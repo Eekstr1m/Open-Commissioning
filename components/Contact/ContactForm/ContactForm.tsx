@@ -107,10 +107,12 @@ const TextArea = styled.textarea`
 `;
 
 const Button = styled.button`
-  color: ${({ theme }) => theme.main};
+  color: ${({ theme }) =>
+    theme.name === "dark-theme" ? theme.orange : theme.main};
   background-color: ${({ theme }) => theme.button};
   padding: 15px 40px;
 
+  font-weight: 800;
   border-radius: 7px;
   border: none;
 

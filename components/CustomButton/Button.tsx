@@ -18,17 +18,19 @@ export default function Button({
 }
 
 const ButtonColor = styled.a`
-  color: ${({ theme }) => theme.main};
+  color: ${({ theme }) =>
+    theme.name === "dark-theme" ? theme.orange : theme.main};
   background-color: ${({ theme }) => theme.button};
   padding: 15px 40px;
   border-radius: 7px;
+
+  font-weight: 800;
 
   width: fit-content;
 
   transition: all 0.2s linear;
 
   &:hover {
-    color: ${({ theme }) => theme.main};
     background-color: ${({ theme }) => theme.hover};
   }
 `;
