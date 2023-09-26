@@ -25,6 +25,16 @@ export default function Header() {
         </Link>
 
         <div className={s.nav_wrapper}>
+          <input type="checkbox" id="menu-toggle" className={s.menu_toggle} />
+          <label htmlFor="menu-toggle" className={s.menu}>
+            <span className={s.bar}>
+              <i className="fa-solid fa-bars fa-xl"></i>
+            </span>
+            <span className={s.close}>
+              <i className="fa-solid fa-xmark fa-2xl"></i>
+            </span>
+          </label>
+
           <NavBar className={s.nav}>
             <ul className={s.nav__list}>
               <li className={s.nav__item}>
@@ -82,15 +92,6 @@ export default function Header() {
               <i className="fa-regular fa-sun fa-xl"></i>
             )}
           </div>
-          <input type="checkbox" id="menu-toggle" className={s.menu_toggle} />
-          <label htmlFor="menu-toggle" className={s.menu}>
-            <span className={s.bar}>
-              <i className="fa-solid fa-bars fa-xl"></i>
-            </span>
-            <span className={s.close}>
-              <i className="fa-solid fa-xmark fa-2xl"></i>
-            </span>
-          </label>
         </div>
       </div>
     </HeaderContainer>
