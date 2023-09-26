@@ -18,8 +18,7 @@ export default function HeadBackground({
         </Title>
       </Wrapper>
       <LogoWrapper>
-        <LogoSVG width={"300px"} height={"300px"} />
-        {/* <LogoSVG width={"200px"} height={"200px"} /> */}
+        {/* <LogoSVG width={"300px"} height={"300px"} /> */}
       </LogoWrapper>
     </div>
   );
