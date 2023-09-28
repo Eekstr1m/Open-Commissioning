@@ -23,9 +23,9 @@ export default function SiteManagementBody() {
               increasing the need for global compliance.
             </p>
             <p>
-              - Resource Optimization - Budget control and project efficiency -
-              Health, safety and environmental compliance - Quality assurance
-              and control - Streamlined document management
+              <p>- Resource Optimization</p><p>- Budget control and project efficiency</p> <p>-
+              Health, safety and environmental compliance</p><p>- Quality assurance
+              and control</p><p>- Streamlined document management<p>
             </p>
             <p>
               Once on site, our Site Managers integrate seamlessly into your
