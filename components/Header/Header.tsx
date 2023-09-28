@@ -6,6 +6,8 @@ import styled from "styled-components";
 import LogoSVG from "@/assets/logo.svg";
 import { useThemeChange } from "@/providers/theme-provider";
 import { useCookies } from "react-cookie";
+import Image from "next/image";
+import logoPNG from "@/assets/logo4.png";
 
 export default function Header() {
   const { isLightTheme, setIsLightTheme } = useThemeChange();
@@ -19,7 +21,14 @@ export default function Header() {
     <HeaderContainer>
       <div className={s.wrapper}>
         <Link href="/" className={s.logo}>
-          <LogoSVG width="60px" height="60px" className={s.test} />
+          {/* <LogoSVG width="60px" height="60px" className={s.test} /> */}
+          <Image
+            src={logoPNG}
+            alt=""
+            width={60}
+            height={60}
+            className={s.test}
+          />
           <p className={s.logo_text}>Open Commissioning</p>
           <span className={s.phrase}>Results based on experience</span>
         </Link>

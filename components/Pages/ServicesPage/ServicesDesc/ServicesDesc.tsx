@@ -1,5 +1,5 @@
 "use client";
-import Button from "@/components/CustomButton/Button";
+// import Button from "@/components/CustomButton/Button";
 import s from "./ServicesDesc.module.scss";
 import styled from "styled-components";
 
@@ -73,4 +73,23 @@ const Icon = styled.i`
   margin-bottom: 20px;
   color: ${({ theme }) => theme.orange};
   filter: drop-shadow(0 0 2px ${({ theme }) => theme.main});
+`;
+
+const Button = styled.a`
+  /* color: ${({ theme }) =>
+    theme.name === "dark-theme" ? theme.orange : theme.main}; */
+  color: #fff;
+  background-color: ${({ theme }) => theme.orange};
+  padding: 15px 40px;
+  border-radius: 7px;
+
+  font-weight: 800;
+
+  width: fit-content;
+
+  transition: all 0.2s linear;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.hover};
+  }
 `;
