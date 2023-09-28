@@ -22,7 +22,7 @@ export default function SiteManagementBody() {
               borders, the pool of qualified candidates shrinks even further,
               increasing the need for global compliance.
             </p>
-            <p>
+            <p className={s.list}>
               <p>- Resource Optimization</p><p>- Budget control and project efficiency</p> <p>-
               Health, safety and environmental compliance</p><p>- Quality assurance
               and control</p><p>- Streamlined document management<p>
