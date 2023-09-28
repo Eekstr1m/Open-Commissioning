@@ -80,7 +80,7 @@ const Input = styled.input`
   font-size: 14px;
 
   &:focus {
-    border: 1px ${({ theme }) => theme.darken_primary} solid;
+    border: 1px ${({ theme }) => theme.hover} solid;
   }
 `;
 

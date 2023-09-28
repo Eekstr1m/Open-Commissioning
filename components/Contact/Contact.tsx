@@ -36,4 +36,7 @@ const ContactSection = styled.section`
 
 const InfoDesc = styled.p`
   color: ${({ theme }) => theme.darken_primary};
+
+  /* color: ${({ theme }) =>
+    theme.name === "dark-theme" ? theme.darken_primary : theme.orange}; */
 `;

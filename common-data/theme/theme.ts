@@ -15,8 +15,8 @@ export const lightTheme = {
   button: "#f08d0b", // orange
 
   hover: "#a87c29", //remake
-  primary: "#d8ae5f",
-  darken_primary: "#a87c29",
+  primary: "#f08d0b",
+  darken_primary: "#f08d0b",
   // bg_primary: "#fffaf0",
   bg_primary: "#fff",
   orange: "#f08d0b",
