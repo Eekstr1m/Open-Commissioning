@@ -28,7 +28,7 @@ export default function ServicesDesc() {
               <Icon className="fa-solid fa-screwdriver-wrench"></Icon>
             </div>
             <div className={s.title}>Commissioning</div>
-            <Button href="/services/commissioning">Read More</Button>
+            <Button href="/services/commissioning">More info</Button>
           </div>
 
           <div className={s.item}>
@@ -36,7 +36,7 @@ export default function ServicesDesc() {
               <Icon className="fa-solid fa-helmet-safety"></Icon>
             </div>
             <div className={s.title}>Site Management</div>
-            <Button href="/services/site-management">Read More</Button>
+            <Button href="/services/site-management">Explore further</Button>
           </div>
 
           <div className={s.item}>
@@ -44,7 +44,7 @@ export default function ServicesDesc() {
               <Icon className="fa-solid fa-gears"></Icon>
             </div>
             <div className={s.title}>Technical Service</div>
-            <Button href="/services/technical-service">Read More</Button>
+            <Button href="/services/technical-service">Learn More</Button>
           </div>
 
           <div className={s.item}>
@@ -53,7 +53,7 @@ export default function ServicesDesc() {
             </div>
             <div className={s.title}>Vacation Replacement Services</div>
             <Button href="/services/vacation-replacement-services">
-              Read More
+              Discover
             </Button>
           </div>
         </div>
