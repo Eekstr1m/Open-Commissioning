@@ -3,7 +3,7 @@
 .wrapper {
   max-width: var(--max-width);
   margin: 10px auto;
-  height: 50px;
+  height: 60px;
 
   display: flex;
   justify-content: space-between;
@@ -23,6 +23,10 @@
   position: absolute;
   top: -3px;
 }
+.logo_content {
+  padding-top: 7px;
+  margin-left: 20px;
+}
 .logo_text {
   padding-left: 40px;
 }
@@ -34,7 +38,7 @@
 
   position: absolute;
   top: 70%;
-  left: 70px;
+  left: 100px;
 }
 
 .nav_wrapper {
