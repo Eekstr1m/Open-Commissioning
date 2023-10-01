@@ -5,7 +5,7 @@ import photo2 from "@/assets/siteManagement2.jpg";
 
 export default function SiteManagementBody() {
   return (
-    <div>
+    <section>
       <div className={s.container}>
         <div className={s.content}>
           <div className={s.content_wrapper}>
@@ -23,9 +23,11 @@ export default function SiteManagementBody() {
               increasing the need for global compliance.
             </p>
             <div className={s.list}>
-              <p>- Resource Optimization</p><p>- Budget control and project efficiency</p> <p>-
-              Health, safety and environmental compliance</p><p>- Quality assurance
-              and control</p><p>- Streamlined document management<p>
+              <p>- Resource Optimization</p>
+              <p>- Budget control and project efficiency</p>{" "}
+              <p>- Health, safety and environmental compliance</p>
+              <p>- Quality assurance and control</p>
+              <p>- Streamlined document management</p>
             </div>
             <p>
               Once on site, our Site Managers integrate seamlessly into your
@@ -93,6 +95,6 @@ export default function SiteManagementBody() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
