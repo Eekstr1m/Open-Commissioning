@@ -5,7 +5,7 @@ import photo2 from "@/assets/siteManagement2.jpg";
 
 export default function SiteManagementBody() {
   return (
-    <section>
+    <div>
       <div className={s.container}>
         <div className={s.content}>
           <div className={s.content_wrapper}>
@@ -93,6 +93,6 @@ export default function SiteManagementBody() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
