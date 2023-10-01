@@ -18,9 +18,8 @@ export default function Button({
 }
 
 const ButtonColor = styled.a`
-  color: ${({ theme }) =>
-    theme.name === "dark-theme" ? theme.orange : theme.main};
-  background-color: ${({ theme }) => theme.button};
+  color: #fff;
+  background-color: ${({ theme }) => theme.orange};
   padding: 15px 40px;
   border-radius: 7px;
 

@@ -27,11 +27,11 @@ export default function ServicesBlock() {
 }
 
 const Item = styled.div`
-  background-color: ${({ theme }) => theme.button};
-  color: ${({ theme }) => theme.main};
+  background-color: ${({ theme }) => theme.orange};
+  color: #fff;
 `;
 
 const Icon = styled.i`
   font-size: 25px;
-  color: ${({ theme }) => theme.button};
+  color: ${({ theme }) => theme.orange};
 `;

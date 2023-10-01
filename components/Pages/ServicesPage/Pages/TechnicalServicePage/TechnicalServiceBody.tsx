@@ -29,7 +29,7 @@ export default function TechnicalServiceBody() {
               through our experienced and well-traveled technicians who are true
               experts in their respective fields, including
             </p>
-            <p>- Welding - Electrical - Automation - Mechanical - Fitting</p>
+            <p className={s.list}><p>- Welding</p><p>- Electrical</p><p>- Automation</p><p>- Mechanical</p><p>- Fitting</p></p>
             <p>
               Our workforce brings a wealth of experience from a wide range of
               industries and is ready to work on your project wherever it is
