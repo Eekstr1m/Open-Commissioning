@@ -25,12 +25,14 @@ export default function Header() {
           <Image
             src={logoPNG}
             alt=""
-            width={60}
-            height={60}
+            width={80}
+            height={80}
             className={s.test}
           />
-          <p className={s.logo_text}>Open Commissioning</p>
-          <span className={s.phrase}>Results based on experience</span>
+          <div className={s.logo_content}>
+            <p className={s.logo_text}>Open Commissioning</p>
+            <span className={s.phrase}>Results based on experience</span>
+          </div>
         </Link>
 
         <div className={s.nav_wrapper}>
@@ -81,6 +83,11 @@ export default function Header() {
               <NavItem className={s.nav__item}>
                 <Link href="/industries" className={s.nav__link}>
                   Industries
+                </Link>
+              </NavItem>
+              <NavItem className={s.nav__item}>
+                <Link href="/safety" className={s.nav__link}>
+                  Safety
                 </Link>
               </NavItem>
               <NavItem className={s.nav__item}>

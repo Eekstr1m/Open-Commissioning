@@ -13,6 +13,7 @@ export default function Footer() {
           <div className={s.nav_block}>
             <Link href={"/about-us"}>About Us</Link>
             <Link href={"/services"}>Services</Link>
+            <Link href={"/safety"}>Safety</Link>
             <Link href={"/industries"}>Industries</Link>
           </div>
           <Link href={"#"}>
