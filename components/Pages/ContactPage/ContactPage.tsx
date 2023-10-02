@@ -1,10 +1,14 @@
 import Contact from "@/components/Contact/Contact";
+import s from "./ContactPage.module.scss";
+import HeadBackground from "@/components/HeadBackground/HeadBackground";
+import bg from "@/assets/contactBG.jpg";
 
 export default function ContactPage() {
   return (
-    <div style={{ paddingTop: "80px", maxWidth: "1200px", margin: "0 auto" }}>
+    <div className={s.container}>
+      <HeadBackground url={bg.src} title={"Contact Us"} />
       <Contact />
-      <div>
+      <div className={s.content}>
         <p>
           We respect your privacy and will only use your personal data to
           administer your account and provide requested products/services. We

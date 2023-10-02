@@ -1,0 +1,10 @@
+.container {
+  max-width: var(--max-width);
+  padding-top: 80px;
+  margin: 0 auto;
+}
+.content {
+  display: grid;
+  gap: 20px;
+  padding: 50px 0;
+}
