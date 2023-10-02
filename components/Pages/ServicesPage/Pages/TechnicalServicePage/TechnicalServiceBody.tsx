@@ -27,9 +27,14 @@ export default function TechnicalServiceBody() {
             <p>
               At Open Commissioning, we offer global support for projects
               through our experienced and well-traveled technicians who are true
-              experts in their respective fields, including
+              experts in their respective fields, including:
             </p>
-            <p className={s.list}><p>- Welding</p><p>- Electrical</p><p>- Automation</p><p>- Mechanical</p><p>- Fitting</p></p>
+            <p className={s.list}>
+              <p>- Electrical</p>
+              <p>- Automation</p>
+              <p>- Mechanical</p>
+              <p>- Technology</p>
+            </p>
             <p>
               Our workforce brings a wealth of experience from a wide range of
               industries and is ready to work on your project wherever it is
