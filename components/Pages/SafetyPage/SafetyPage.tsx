@@ -5,6 +5,7 @@ import s from "./SafetyPage.module.scss";
 import bg from "@/assets/safetyBG.jpg";
 import HeadBackground from "@/components/HeadBackground/HeadBackground";
 import SafetyBody from "./SafetyBody/SafetyBody";
+import SafetyContent from "./SafetyContent/SafetyContent";
 
 export default function SafetyPage() {
   return (
@@ -12,6 +13,7 @@ export default function SafetyPage() {
       <HeadBackground url={bg.src} title={"Safety"} />
 
       <SafetyBody />
+      <SafetyContent />
 
       <Footer />
     </section>
