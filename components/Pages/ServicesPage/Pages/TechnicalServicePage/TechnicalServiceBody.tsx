@@ -34,6 +34,7 @@ export default function TechnicalServiceBody() {
               <p>- Automation</p>
               <p>- Mechanical</p>
               <p>- Technology</p>
+              <p>- Safety</p>
             </p>
             <p>
               Our workforce brings a wealth of experience from a wide range of
