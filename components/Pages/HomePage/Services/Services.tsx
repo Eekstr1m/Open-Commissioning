@@ -11,7 +11,7 @@ import Link from "next/link";
 export default function Services() {
   return (
     <section className={s.wrapper}>
-      <div className={s.head_title}>Our Services</div>
+      <div className={s.head_title}>Key Topics</div>
       <div className={s.container}>
         <div className={s.service_item}>
           <Image
@@ -118,7 +118,7 @@ export default function Services() {
             </ReadMore>
           </div>
         </div>
-        <div className={s.service_item}>
+        {/* <div className={s.service_item}>
           <Image
             src={service5}
             alt=""
@@ -143,6 +143,34 @@ export default function Services() {
               <Link href={"/services/vacation-replacement-services"}>
                 Read More
               </Link>
+            </ReadMore>
+          </div>
+        </div> */}
+
+        <div className={s.service_item}>
+          <Image
+            src={service5}
+            alt=""
+            width={350}
+            height={350}
+            style={{
+              objectFit: "cover",
+              borderRadius: "10px",
+              width: "100%",
+              filter: "brightness(85%)",
+            }}
+          />
+          <div className={s.service_info}>
+            <div className={s.title}>Safety</div>
+            <div className={s.text}>
+              Safety during commissioning is paramount. It requires rigorous
+              planning, meticulous execution and constant vigilance to prevent
+              accidents and ensure a safe working environment. Prioritizing
+              safety not only protects personnel, but also contributes to the
+              successful and smooth completion of projects.
+            </div>
+            <ReadMore>
+              <Link href={"/safety"}>Read More</Link>
             </ReadMore>
           </div>
         </div>
