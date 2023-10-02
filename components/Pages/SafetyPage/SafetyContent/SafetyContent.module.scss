@@ -1,0 +1,22 @@
+.container {
+  //   width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  //   grid-template-columns: 1fr 1fr;
+
+  gap: 30px;
+}
+.title {
+  margin: 0 auto;
+  font-size: 28px;
+}
+.item {
+  display: flex;
+
+  gap: 30px;
+  align-items: center;
+
+  &:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+}
