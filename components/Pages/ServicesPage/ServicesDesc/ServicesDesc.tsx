@@ -47,7 +47,7 @@ export default function ServicesDesc() {
             <Button href="/services/technical-service">Learn More</Button>
           </div>
 
-          <div className={s.item}>
+          {/* <div className={s.item}>
             <div className={s.icon}>
               <Icon className="fa-solid fa-users-gear"></Icon>
             </div>
@@ -55,7 +55,7 @@ export default function ServicesDesc() {
             <Button href="/services/vacation-replacement-services">
               Discover
             </Button>
-          </div>
+          </div> */}
         </div>
       </div>
     </ServicesSection>
