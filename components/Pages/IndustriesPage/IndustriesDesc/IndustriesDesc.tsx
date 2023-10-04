@@ -26,7 +26,7 @@ export default function IndustriesDesc() {
             <div className={s.icon}>
               <Icon className="fa-solid fa-bolt"></Icon>
             </div>
-            <Title className={s.title}>Power and Utilities</Title>
+            <Title className={s.title}>Power & Utilities</Title>
           </div>
 
           <div className={s.item}>
@@ -40,7 +40,7 @@ export default function IndustriesDesc() {
             <div className={s.icon}>
               <Icon className="fa-solid fa-flask"></Icon>
             </div>
-            <Title className={s.title}>Oil and Fat</Title>
+            <Title className={s.title}>Oil & Fat</Title>
           </div>
 
           <div className={s.item}>
@@ -61,7 +61,7 @@ export default function IndustriesDesc() {
             <div className={s.icon}>
               <Icon className="fa-solid fa-microchip"></Icon>
             </div>
-            <Title className={s.title}>Technology and IT</Title>
+            <Title className={s.title}>Technology & IT</Title>
           </div>
 
           <div className={s.item}>
