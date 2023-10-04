@@ -40,7 +40,7 @@ export default function IndustriesDesc() {
             <div className={s.icon}>
               <Icon className="fa-solid fa-flask"></Icon>
             </div>
-            <Title className={s.title}>Oil and Gas</Title>
+            <Title className={s.title}>Oil & Fat</Title>
           </div>
 
           <div className={s.item}>
