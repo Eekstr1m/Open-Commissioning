@@ -4,6 +4,8 @@
 
   gap: 20px;
   padding: 20px 0;
+
+  place-items: center;
 }
 .content {
   display: grid;
@@ -37,8 +39,8 @@
   }
   .image {
     place-items: center;
-    &:nth-of-type(1) {
-      order: 4;
-    }
+    // &:nth-of-type(1) {
+    //   order: 4;
+    // }
   }
 }
