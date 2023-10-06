@@ -4,6 +4,16 @@ import * as Yup from "yup";
 import s from "./ContactForm.module.scss";
 import styled from "styled-components";
 
+export const sendContactFrom = async (data: any) =>
+  fetch("/api/contact", {
+    method: "POST",
+    body: JSON.stringify(data),
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+  });
+
 export default function ContactForm() {
   const formik = useFormik({
     initialValues: {
@@ -16,8 +26,9 @@ export default function ContactForm() {
       email: Yup.string().email("Invalid email address").required("Required"),
       messageText: Yup.string().required("Required"),
     }),
-    onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+    onSubmit: async (values) => {
+      // alert(JSON.stringify(values, null, 2));
+      await sendContactFrom(values);
     },
   });
   return (
