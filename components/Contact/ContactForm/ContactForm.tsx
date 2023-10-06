@@ -3,6 +3,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import s from "./ContactForm.module.scss";
 import styled from "styled-components";
+import { useState } from "react";
 
 export const sendContactFrom = async (data: any) =>
   fetch("/api/contact", {
@@ -12,9 +13,20 @@ export const sendContactFrom = async (data: any) =>
       "Content-Type": "application/json",
       Accept: "application/json",
     },
+  }).then((res) => {
+    if (!res.ok) throw new Error("Failed to send message");
+    return res.json();
   });
 
+export type FormValuesType = {
+  fullName: string;
+  email: string;
+  messageText: string;
+};
+
 export default function ContactForm() {
+  const [errorForm, setErrorForm] = useState("");
+
   const formik = useFormik({
     initialValues: {
       fullName: "",
@@ -26,13 +38,20 @@ export default function ContactForm() {
       email: Yup.string().email("Invalid email address").required("Required"),
       messageText: Yup.string().required("Required"),
     }),
-    onSubmit: async (values) => {
-      // alert(JSON.stringify(values, null, 2));
-      await sendContactFrom(values);
+    onSubmit: async (values, { resetForm }) => {
+      try {
+        await sendContactFrom(values);
+        resetForm();
+      } catch (error: any) {
+        setErrorForm(error.message);
+      }
     },
   });
+
   return (
     <form className={s.form} onSubmit={formik.handleSubmit}>
+      {errorForm && <ErrorMsg>{errorForm}</ErrorMsg>}
+
       <Input
         id="fullName"
         name="fullName"
@@ -42,9 +61,9 @@ export default function ContactForm() {
         value={formik.values.fullName}
         placeholder="Name*"
       />
-      {/* {formik.touched.fullName && formik.errors.fullName ? (
-        <div>{formik.errors.fullName}</div>
-      ) : null} */}
+      {formik.touched.fullName && formik.errors.fullName ? (
+        <ErrorMsg>{formik.errors.fullName}</ErrorMsg>
+      ) : null}
 
       <Input
         id="email"
@@ -55,9 +74,9 @@ export default function ContactForm() {
         value={formik.values.email}
         placeholder="Email*"
       />
-      {/* {formik.touched.email && formik.errors.email ? (
-        <div>{formik.errors.email}</div>
-      ) : null} */}
+      {formik.touched.email && formik.errors.email ? (
+        <ErrorMsg>{formik.errors.email}</ErrorMsg>
+      ) : null}
 
       <TextArea
         id="messageText"
@@ -67,9 +86,9 @@ export default function ContactForm() {
         value={formik.values.messageText}
         placeholder="Your Message*"
       />
-      {/* {formik.touched.messageText && formik.errors.messageText ? (
-        <div>{formik.errors.messageText}</div>
-      ) : null} */}
+      {formik.touched.messageText && formik.errors.messageText ? (
+        <ErrorMsg>{formik.errors.messageText}</ErrorMsg>
+      ) : null}
 
       <Button type="submit">Submit</Button>
     </form>
@@ -133,4 +152,9 @@ const Button = styled.button`
     color: ${({ theme }) => theme.main};
     background-color: ${({ theme }) => theme.hover};
   }
+`;
+
+const ErrorMsg = styled.div`
+  color: #ff3333;
+  line-height: 0;
 `;

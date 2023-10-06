@@ -48,7 +48,7 @@ export default function Header() {
 
           <NavBar className={s.nav}>
             <ul className={s.nav__list}>
-              <li className={s.nav__item}>
+              <div className={s.nav__item}>
                 <NavItem className={s.nav__link}>
                   <Link href="/services" className={s.nav_item}>
                     Services
@@ -79,7 +79,7 @@ export default function Header() {
                     </Link>
                   </NavItem> */}
                 </SubNav>
-              </li>
+              </div>
               <NavItem className={s.nav__item}>
                 <Link href="/industries" className={s.nav__link}>
                   Industries
