@@ -1,20 +1,22 @@
-`use client`;
-import styled from "styled-components";
 import s from "./Footer.module.scss";
 import LogoSVG from "@/assets/logo.svg";
 import Image from "next/image";
 import Link from "next/link";
+import { Locale } from "@/i18n.config";
+import { getDictionary } from "@/lib/dictionary";
 
-export default function Footer() {
+export default async function Footer({ lang }: { lang: Locale }) {
+  const { navigation } = await getDictionary(lang);
+
   return (
-    <FooterSection>
+    <footer className={s.footer}>
       <div className={s.content}>
         <div className={s.top}>
           <div className={s.nav_block}>
-            <Link href={"/about-us"}>About Us</Link>
-            <Link href={"/services"}>Services</Link>
-            <Link href={"/safety"}>Safety</Link>
-            <Link href={"/industries"}>Industries</Link>
+            <Link href={`/${lang}/about-us`}>{navigation.aboutUs}</Link>
+            <Link href={`/${lang}/services`}>{navigation.services}</Link>
+            <Link href={`/${lang}/safety`}>{navigation.safety}</Link>
+            <Link href={`/${lang}/industries`}>{navigation.industries}</Link>
           </div>
           <Link href={"#"}>
             <i
@@ -25,20 +27,17 @@ export default function Footer() {
           {/* <LogoSVG /> */}
         </div>
         <div className={s.bottom}>
-          <div>&copy; 2023 Open Commissioning All Rights Reserved</div>
+          <div>&copy; 2023 Open Commissioning {navigation.rights}</div>
           <div className={s.item}>
-            <Link href={"/privacy-policy"}>Privacy Policy</Link>
-            <Link href={"/therms-of-service"}>Therm of Service</Link>
+            <Link href={`/${lang}/privacy-policy`}>
+              {navigation.privacyPolicy}
+            </Link>
+            <Link href={`/${lang}/terms-of-service`}>
+              {navigation.termsOfService}
+            </Link>
           </div>
         </div>
       </div>
-    </FooterSection>
+    </footer>
   );
 }
-
-const FooterSection = styled.footer`
-  background-color: ${({ theme }) => theme.bg_primary};
-
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-`;

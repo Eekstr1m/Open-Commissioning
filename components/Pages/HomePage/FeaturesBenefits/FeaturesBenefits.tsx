@@ -1,61 +1,39 @@
 import styled from "styled-components";
 import s from "./FeaturesBenefits.module.scss";
+import { Locale } from "@/i18n.config";
+import { getDictionary } from "@/lib/dictionary";
 
-export default function FeaturesBenefits() {
+export default async function FeaturesBenefits({ lang }: { lang: Locale }) {
+  const { homePage } = await getDictionary(lang);
   return (
-    <Container>
-      <span className={s.separator}>Features & Benefits</span>
+    <section className={s.container}>
+      <span className={s.separator}>{homePage.featuresBenefits.title}</span>
       <div className={s.content}>
         <div className={s.content_item}>
-          <div className={s.title}>Features</div>
-          <div className={s.item}>
-            <Icon className="fa-solid fa-check"></Icon>Tech Solutions
+          <div className={s.title}>
+            {homePage.featuresBenefits.featuresTitle}
           </div>
-          <div className={s.item}>
-            <Icon className="fa-solid fa-check"></Icon>Workforce Analytics
-          </div>
-          <div className={s.item}>
-            <Icon className="fa-solid fa-check"></Icon>Talent Management
-          </div>
-          <div className={s.item}>
-            <Icon className="fa-solid fa-check"></Icon>Customizable Solutions
-          </div>
-          <div className={s.item}>
-            <Icon className="fa-solid fa-check"></Icon>Affordable Pricing
-          </div>
+
+          {homePage.featuresBenefits.features.map((name, index) => (
+            <div key={index} className={s.item}>
+              <i className={`${s.icon} fa-solid fa-check`}></i>
+              {name}
+            </div>
+          ))}
         </div>
         <div className={s.content_item}>
-          <div className={s.title}>Benefits</div>
-          <div className={s.item}>
-            <Icon className="fa-solid fa-check"></Icon>Streamlined Processes
+          <div className={s.title}>
+            {homePage.featuresBenefits.benefitsTitle}
           </div>
-          <div className={s.item}>
-            <Icon className="fa-solid fa-check"></Icon>Increased Productivity
-          </div>
-          <div className={s.item}>
-            <Icon className="fa-solid fa-check"></Icon>Reduced Costs
-          </div>
-          <div className={s.item}>
-            <Icon className="fa-solid fa-check"></Icon>Improved Employee
-            Satisfaction
-          </div>
-          <div className={s.item}>
-            <Icon className="fa-solid fa-check"></Icon>Innovative Solutions
-          </div>
+
+          {homePage.featuresBenefits.benefits.map((name, index) => (
+            <div key={index} className={s.item}>
+              <i className={`${s.icon} fa-solid fa-check`}></i>
+              {name}
+            </div>
+          ))}
         </div>
       </div>
-    </Container>
+    </section>
   );
 }
-
-const Icon = styled.i`
-  color: ${({ theme }) => theme.darken_primary};
-`;
-
-const Container = styled.section`
-  background-color: ${({ theme }) => theme.bg_primary};
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-
-  padding-bottom: 50px;
-`;

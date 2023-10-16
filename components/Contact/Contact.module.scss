@@ -1,3 +1,13 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 50px 0;
+  gap: 30px;
+  place-items: center;
+
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
 .title {
   font-size: 28px;
   margin-bottom: 20px;
@@ -10,4 +20,7 @@
 }
 .info_title {
   font-weight: 300;
+}
+.info_desc {
+  color: var(--darken_primary);
 }

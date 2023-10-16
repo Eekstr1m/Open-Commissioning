@@ -1,29 +1,16 @@
-import Button from "@/components/CustomButton/Button";
 import s from "./CaseStudies.module.scss";
-import styled from "styled-components";
+import { Locale } from "@/i18n.config";
+import { getDictionary } from "@/lib/dictionary";
 
-export default function CaseStudies() {
+export default async function CaseStudies({ lang }: { lang: Locale }) {
+  const { homePage } = await getDictionary(lang);
   return (
     <section className={s.case_wrapper}>
       <div className={s.client_block}>
-        <div className={s.title}>Client Testimonials</div>
-        <NameDiv>John Simpson</NameDiv>
-        <div className={s.text}>
-          Open Commissioning exceeded our expectations. Their attention to
-          detail and commitment to quality transformed our project into a
-          resounding success. We couldn’t have done it without them!
-        </div>
+        <div className={s.title}>{homePage.caseStudies.title}</div>
+        <div className={s.name}>{homePage.caseStudies.name}</div>
+        <div className={s.text}>{homePage.caseStudies.text}</div>
       </div>
-      {/* <div className={s.more_block}>
-        <div className={s.more_text}>
-          Read about how we support our clients projects
-        </div>
-        <Button>Case Studies</Button>
-      </div> */}
     </section>
   );
 }
-
-const NameDiv = styled.div`
-  color: ${({ theme }) => theme.darken_primary};
-`;

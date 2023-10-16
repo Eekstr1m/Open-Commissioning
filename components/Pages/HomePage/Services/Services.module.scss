@@ -37,6 +37,16 @@
   display: grid;
   gap: 20px;
 }
+.read_more {
+  width: fit-content;
+  font-size: 14px;
+  color: var(--darken_primary);
+  font-weight: 300;
+
+  &:hover {
+    color: var(--hover);
+  }
+}
 
 @media (max-width: 950px) {
   .service_item {

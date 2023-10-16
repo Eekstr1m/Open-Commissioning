@@ -1,37 +1,26 @@
-import styled from "styled-components";
+import { Locale } from "@/i18n.config";
 import s from "./ServicesBlock.module.scss";
-import pic from "@/assets/1.jpg";
+import { getDictionary } from "@/lib/dictionary";
 
-export default function ServicesBlock() {
+export default async function ServicesBlock({ lang }: { lang: Locale }) {
+  const { servicesPage } = await getDictionary(lang);
+
   return (
     <section>
       <div className={s.head}>
-        <div className={s.head_title}>Our process</div>
-        <div className={s.head_text}>
-          Your path to success At Open Commissioning, we’ve refined our process
-          to ensure seamless project delivery and customer satisfaction.
-        </div>
+        <div className={s.head_title}>{servicesPage.servicesBlock.title}</div>
+        <div className={s.head_text}>{servicesPage.servicesBlock.desc}</div>
       </div>
 
       <div className={s.content}>
-        <Item className={s.item}>Plan</Item>
-        <Icon className="fa-solid fa-arrow-right"></Icon>
-        <Item className={s.item}>Execute</Item>
-        <Icon className="fa-solid fa-arrow-right"></Icon>
-        <Item className={s.item}>Monitor</Item>
-        <Icon className="fa-solid fa-arrow-right"></Icon>
-        <Item className={s.item}>Conclude</Item>
+        <div className={s.item}>{servicesPage.servicesBlock.content[1]}</div>
+        <i className={`${s.icon} fa-solid fa-arrow-right`}></i>
+        <div className={s.item}>{servicesPage.servicesBlock.content[2]}</div>
+        <i className={`${s.icon} fa-solid fa-arrow-right`}></i>
+        <div className={s.item}>{servicesPage.servicesBlock.content[3]}</div>
+        <i className={`${s.icon} fa-solid fa-arrow-right`}></i>
+        <div className={s.item}>{servicesPage.servicesBlock.content[4]}</div>
       </div>
     </section>
   );
 }
-
-const Item = styled.div`
-  background-color: ${({ theme }) => theme.orange};
-  color: #fff;
-`;
-
-const Icon = styled.i`
-  font-size: 25px;
-  color: ${({ theme }) => theme.orange};
-`;

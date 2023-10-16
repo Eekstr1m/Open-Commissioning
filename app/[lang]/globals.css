@@ -1,0 +1,47 @@
+:root {
+  --max-width: 1200px;
+
+  /* Color Scheme */
+  --fg: #000;
+  --bg: #fff;
+
+  --main: #fff;
+  --button: #f08d0b;
+  --hover: #a87c29;
+  --primary: #f08d0b;
+  --darken_primary: #f08d0b;
+  --bg_primary: #fff;
+  --orange: #f08d0b;
+}
+
+[data-theme="dark"] {
+  --fg: #fff;
+  --bg: #121212;
+
+  --main: #0f0f0f;
+  --button: #fff;
+  --hover: #6c757d;
+  --primary: #6c757d;
+  --darken_primary: #ced4da;
+  --bg_primary: #393939;
+  --orange: #f08d0b;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+
+  background-color: var(--main);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

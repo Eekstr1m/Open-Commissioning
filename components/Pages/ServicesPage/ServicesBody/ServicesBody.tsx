@@ -1,42 +1,27 @@
-"use client";
 import Image from "next/image";
 import photo from "@/assets/7.jpg";
 import s from "./ServicesBody.module.scss";
-import styled from "styled-components";
-import Link from "next/link";
 import Button from "@/components/CustomButton/Button";
+import { getDictionary } from "@/lib/dictionary";
+import { Locale } from "@/i18n.config";
 
-export default function ServicesBody() {
+export default async function ServicesBody({ lang }: { lang: Locale }) {
+  const { servicesPage } = await getDictionary(lang);
+
   return (
     <section className={s.container}>
       <div className={s.content}>
         <div className={s.content_wrapper}>
-          <p className={s.title}>
-            Customized and compliant engineering solutions
-          </p>
-          <p>
-            Open Commissioning is your trusted partner in delivering tailored
-            and compliant solutions across a range of technical disciplines. Our
-            global presence, combined with our extensive expertise and highly
-            skilled workforce, enables us to support projects worldwide. We
-            specialize in creating solutions that are not only compliant but
-            also adaptable, minimizing your risk and helping you to achieve your
-            goals.
-          </p>
+          <p className={s.title}>{servicesPage.servicesBody.textTitle}</p>
+          <p>{servicesPage.servicesBody.text1}</p>
 
-          <p>
-            Our primary areas of operation include the international
-            construction, marine, energy and food processing industries. We have
-            technical specialists strategically located around the world with
-            core competencies in supervision, commissioning, consultancy and
-            global mobility.
-          </p>
+          <p>{servicesPage.servicesBody.text2}</p>
 
-          <Contact>
-            Got a challenging project on the horizon? Contact us today.
-          </Contact>
+          <p className={s.contact}>{servicesPage.servicesBody.contactText}</p>
 
-          <Button href="/contact-us">Contact Us</Button>
+          <Button href={`/${lang}/contact-us`}>
+            {servicesPage.servicesBody.button}
+          </Button>
         </div>
       </div>
       <div className={s.image}>
@@ -55,13 +40,3 @@ export default function ServicesBody() {
     </section>
   );
 }
-
-const Contact = styled.p`
-  /* padding: 20px 0; */
-  font-weight: 600;
-  color: ${({ theme }) => theme.darken_primary};
-
-  :hover {
-    text-decoration: underline;
-  }
-`;

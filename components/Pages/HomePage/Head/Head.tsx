@@ -2,27 +2,23 @@ import Image from "next/image";
 import s from "./Head.module.scss";
 import Button from "@/components/CustomButton/Button";
 import picture from "@/assets/1.jpg";
-import styled from "styled-components";
+import { getDictionary } from "@/lib/dictionary";
+import { Locale } from "@/i18n.config";
 
-export default function Head() {
+export default async function Head({ lang }: { lang: Locale }) {
+  const { homePage } = await getDictionary(lang);
+
   return (
-    <HeadSection>
+    <section className={s.section}>
       <div className={s.wrapper}>
         <div className={s.info_block}>
           <p className={s.head_title}>
-            Get ahead with
+            {homePage.head.title}
             <br />
             OPEN COMMISSIONING
           </p>
-          <p className={s.text}>
-            In the dynamic landscape of modern industry, ensuring the efficient
-            functioning of complex systems and facilities is paramount. That’s
-            where Open Commissioning steps in as your trusted partner. We are a
-            company dedicated to delivering top-tier commissioning, supervision,
-            site management, technical service, and vacation replacement
-            services.
-          </p>
-          <Button href={"/services"}>View All Services</Button>
+          <p className={s.text}>{homePage.head.description}</p>
+          <Button href={`/${lang}/services`}>{homePage.head.button}</Button>
         </div>
         <div className={s.image_block}>
           <Image
@@ -38,12 +34,6 @@ export default function Head() {
           />
         </div>
       </div>
-    </HeadSection>
+    </section>
   );
 }
-
-const HeadSection = styled.section`
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  background-color: ${({ theme }) => theme.bg_primary};
-`;

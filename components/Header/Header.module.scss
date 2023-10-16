@@ -1,5 +1,14 @@
-@import "app/library";
+.container {
+  font-weight: 700;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  background-color: var(--bg_primary);
 
+  border-top: 2px #fff solid;
+
+  box-shadow: 0px 3px 10px 0px rgba(255, 255, 255, 0.2);
+}
 .wrapper {
   max-width: var(--max-width);
   margin: 10px auto;
@@ -45,7 +54,6 @@
   display: flex;
   gap: 30px;
 }
-
 /* Nav */
 .nav__list {
   display: flex;
@@ -54,9 +62,10 @@
 }
 .nav__item {
   position: relative;
-  transition: all 0.2s linear;
+  transition: color 0.2s linear;
 
   &:hover {
+    // color: var(--primary);
     > .subnav {
       display: block;
     }
@@ -64,6 +73,12 @@
 }
 .nav__link {
   display: block;
+
+  transition: color 0.2s linear;
+
+  &:hover {
+    color: var(--primary);
+  }
 
   i {
     padding-left: 10px;
@@ -80,11 +95,19 @@
   position: absolute;
   top: 100%;
   left: 0;
+
+  background-color: var(--bg_primary);
 }
 .subnav__link {
   display: block;
   padding: 0.45rem 1.2rem;
   cursor: pointer;
+
+  transition: color 0.2s linear;
+
+  &:hover {
+    color: var(--primary);
+  }
 }
 //Nav
 
@@ -109,7 +132,7 @@
   display: block;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1023px) {
   .nav_wrapper {
     flex-direction: row-reverse;
   }

@@ -9,13 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formatjs/intl-localematcher": "^0.4.2",
     "@types/node": "20.6.0",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
     "formik": "^2.4.4",
+    "negotiator": "^0.6.3",
     "next": "^13.5.4",
+    "next-themes": "^0.2.1",
     "nodemailer": "^6.9.5",
     "react": "18.2.0",
     "react-cookie": "^6.1.1",
@@ -26,7 +29,9 @@
     "yup": "^1.2.0"
   },
   "devDependencies": {
+    "@heroicons/react": "^2.0.18",
     "@svgr/webpack": "^8.1.0",
+    "@types/negotiator": "^0.6.1",
     "@types/nodemailer": "^6.4.11"
   }
 }

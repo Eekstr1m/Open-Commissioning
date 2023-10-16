@@ -2,40 +2,26 @@ import Image from "next/image";
 import s from "../PagesBody.module.scss";
 import photo1 from "@/assets/siteManagement1.jpg";
 import photo2 from "@/assets/siteManagement2.jpg";
+import { Locale } from "@/i18n.config";
+import { getDictionary } from "@/lib/dictionary";
 
-export default function SiteManagementBody() {
+export default async function SiteManagementBody({ lang }: { lang: Locale }) {
+  const { siteManagementPage } = await getDictionary(lang);
+
   return (
     <section>
       <div className={s.container}>
         <div className={s.content}>
           <div className={s.content_wrapper}>
-            <p className={s.title}>Global site management expertise</p>
-            <p>
-              Today’s project leadership requires a unique blend of managerial
-              skills, analytical acumen and planning excellence. In addition,
-              the digital landscape has expanded the role of project leaders,
-              making proficiency with ERP and CMMS software essential.
-            </p>
-            <p>
-              This distinctive skill set can make finding the perfect project
-              manager a daunting task. If your project spans international
-              borders, the pool of qualified candidates shrinks even further,
-              increasing the need for global compliance.
-            </p>
+            <p className={s.title}>{siteManagementPage.body.textTitle}</p>
+            <p>{siteManagementPage.body.text1}</p>
+            <p>{siteManagementPage.body.text2}</p>
             <div className={s.list}>
-              <p>- Resource Optimization</p>
-              <p>- Budget control and project efficiency</p>{" "}
-              <p>- Health, safety and environmental compliance</p>
-              <p>- Quality assurance and control</p>
-              <p>- Streamlined document management</p>
+              {siteManagementPage.body.text3.map((item, index) => (
+                <p key={index}>{item}</p>
+              ))}
             </div>
-            <p>
-              Once on site, our Site Managers integrate seamlessly into your
-              project, becoming the liaison between on-site personnel and
-              off-site stakeholders. They act as staunch advocates for your
-              organization, working diligently to ensure your project stays on
-              track and within budget.
-            </p>
+            <p>{siteManagementPage.body.text4}</p>
           </div>
         </div>
         <div className={s.image}>
@@ -69,29 +55,9 @@ export default function SiteManagementBody() {
         </div>
         <div className={s.content}>
           <div className={s.content_wrapper}>
-            <p>
-              At Open Commissioning, we provide you with a team of experienced
-              and globally experienced Site Managers with a wealth of
-              industry-specific knowledge ready to support your project. Our
-              Site Managers are multi-skilled professionals with electrical and
-              mechanical expertise. They excel in critical areas such as project
-              planning, resource optimization, risk mitigation and quality
-              assurance.
-            </p>
-            <p>
-              What sets our Site Managers apart is their unique ability to
-              combine a commercial perspective with technical acumen. This
-              enables them to communicate effectively across different
-              hierarchies, bridging the gap between supervisors, project
-              managers, subcontractors and your end client.
-            </p>
-            <p>
-              We understand that every project is unique, with its own set of
-              challenges and potential disruptions. That’s why our Site Managers
-              are prepared to commit to extended on-site stays, reducing the
-              need for frequent transitions between team members and minimizing
-              the likelihood of errors.
-            </p>
+            <p>{siteManagementPage.body.text5}</p>
+            <p>{siteManagementPage.body.text6}</p>
+            <p>{siteManagementPage.body.text7}</p>
           </div>
         </div>
       </div>
