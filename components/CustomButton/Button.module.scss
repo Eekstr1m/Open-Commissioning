@@ -1,0 +1,15 @@
+.btn {
+  color: #fff;
+  background-color: var(--orange);
+  padding: 15px 40px;
+  border-radius: 7px;
+
+  font-weight: 800;
+  width: fit-content;
+
+  transition: background-color 0.2s linear;
+
+  &:hover {
+    background-color: var(--hover);
+  }
+}

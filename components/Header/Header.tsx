@@ -1,26 +1,20 @@
-"use client";
 import Link from "next/link";
 import s from "./Header.module.scss";
 import Button from "../CustomButton/Button";
-import styled from "styled-components";
-import LogoSVG from "@/assets/logo.svg";
-import { useThemeChange } from "@/providers/theme-provider";
-import { useCookies } from "react-cookie";
 import Image from "next/image";
 import logoPNG from "@/assets/logo4.png";
 
-export default function Header() {
-  const { isLightTheme, setIsLightTheme } = useThemeChange();
-  const [cookies, setCookie] = useCookies(["isLightTheme"]);
+import ThemeButton from "./ThemeButton";
+import { Locale } from "@/i18n.config";
+import { getDictionary } from "@/lib/dictionary";
 
-  const clickHandler = () => {
-    setIsLightTheme((prev) => !prev);
-    setCookie("isLightTheme", !isLightTheme, { maxAge: 864000000 });
-  };
+export default async function Header({ lang }: { lang: Locale }) {
+  const { navigation } = await getDictionary(lang);
+
   return (
-    <HeaderContainer>
+    <div className={s.container}>
       <div className={s.wrapper}>
-        <Link href="/" className={s.logo}>
+        <Link href={`/${lang}`} className={s.logo}>
           {/* <LogoSVG width="60px" height="60px" className={s.test} /> */}
           <Image
             src={logoPNG}
@@ -46,97 +40,70 @@ export default function Header() {
             </span>
           </label>
 
-          <NavBar className={s.nav}>
+          <div className={s.nav}>
             <ul className={s.nav__list}>
               <div className={s.nav__item}>
-                <NavItem className={s.nav__link}>
-                  <Link href="/services" className={s.nav_item}>
-                    Services
+                <li className={s.nav__link}>
+                  <Link href={`/${lang}/services`} className={s.nav_item}>
+                    {navigation.services}
                     <i className="fa-solid fa-caret-down"></i>
                   </Link>
-                </NavItem>
+                </li>
 
-                <SubNav className={s.subnav}>
-                  <NavItem className={s.subnav__link}>
-                    <Link href={"/services/supervision"}>Supervision</Link>
-                  </NavItem>
-                  <NavItem className={s.subnav__link}>
-                    <Link href={"/services/commissioning"}>Commissioning</Link>
-                  </NavItem>
-                  <NavItem className={s.subnav__link}>
-                    <Link href={"/services/site-management"}>
-                      Site Management
+                <ul className={s.subnav}>
+                  <li className={s.subnav__link}>
+                    <Link href={`/${lang}/services/supervision`}>
+                      {navigation.servicesNames.supervision}
                     </Link>
-                  </NavItem>
-                  <NavItem className={s.subnav__link}>
-                    <Link href={"/services/technical-service"}>
-                      Technical Service
+                  </li>
+                  <li className={s.subnav__link}>
+                    <Link href={`/${lang}/services/commissioning`}>
+                      {navigation.servicesNames.commissioning}
                     </Link>
-                  </NavItem>
-                  {/* <NavItem className={s.subnav__link}>
-                    <Link href={"/services/vacation-replacement-services"}>
+                  </li>
+                  <li className={s.subnav__link}>
+                    <Link href={`/${lang}/services/site-management`}>
+                      {navigation.servicesNames.siteManagement}
+                    </Link>
+                  </li>
+                  <li className={s.subnav__link}>
+                    <Link href={`/${lang}/services/technical-service`}>
+                      {navigation.servicesNames.technicalService}
+                    </Link>
+                  </li>
+                  {/* <li className={s.subnav__link}>
+                    <Link href={`/${lang}/services/vacation-replacement-services`}>
                       Vacation Replacement Services
                     </Link>
-                  </NavItem> */}
-                </SubNav>
+                  </li> */}
+                </ul>
               </div>
-              <NavItem className={s.nav__item}>
-                <Link href="/industries" className={s.nav__link}>
-                  Industries
+              <li className={s.nav__item}>
+                <Link href={`/${lang}/industries`} className={s.nav__link}>
+                  {navigation.industries}
                 </Link>
-              </NavItem>
-              <NavItem className={s.nav__item}>
-                <Link href="/safety" className={s.nav__link}>
-                  Safety
+              </li>
+              <li className={s.nav__item}>
+                <Link href={`/${lang}/safety`} className={s.nav__link}>
+                  {navigation.safety}
                 </Link>
-              </NavItem>
-              <NavItem className={s.nav__item}>
-                <Link href="/about-us" className={s.nav__link}>
-                  About Us
+              </li>
+              <li className={s.nav__item}>
+                <Link href={`/${lang}/about-us`} className={s.nav__link}>
+                  {navigation.aboutUs}
                 </Link>
-              </NavItem>
-              <NavItem className={s.nav__item}>
-                <Button href="/contact-us">Contact</Button>
-              </NavItem>
+              </li>
+              <li className={s.nav__item}>
+                <Button href={`/${lang}/contact-us`}>
+                  {navigation.contact}
+                </Button>
+              </li>
             </ul>
-          </NavBar>
-
-          <div onClick={clickHandler}>
-            {isLightTheme ? (
-              <i className="fa-regular fa-moon fa-xl"></i>
-            ) : (
-              <i className="fa-regular fa-sun fa-xl"></i>
-            )}
           </div>
+
+          <ThemeButton />
         </div>
       </div>
-    </HeaderContainer>
+    </div>
   );
 }
-
-const HeaderContainer = styled.header`
-  font-weight: 700;
-  width: 100%;
-  position: fixed;
-  z-index: 9999;
-  background-color: ${({ theme }) => theme.main};
-
-  border-top: 2px #fff solid;
-
-  box-shadow: 0px 3px 10px 0px rgba(255, 255, 255, 0.2);
-`;
-
-const NavBar = styled.nav`
-  background-color: ${({ theme }) => theme.main};
-`;
-
-const NavItem = styled.li`
-  transition: color 0.2s linear;
-  &:hover {
-    color: ${({ theme }) => theme.primary};
-  }
-`;
-
-const SubNav = styled.ul`
-  background-color: ${({ theme }) => theme.main};
-`;

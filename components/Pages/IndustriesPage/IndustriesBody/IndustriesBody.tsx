@@ -1,42 +1,28 @@
-"use client";
 import Image from "next/image";
 import photo from "@/assets/8.jpg";
 import s from "./IndustriesBody.module.scss";
-import styled from "styled-components";
-import Link from "next/link";
-import Button from "@/components/CustomButton/Button";
+import { Locale } from "@/i18n.config";
+import { getDictionary } from "@/lib/dictionary";
 
-export default function IndustriesBody() {
+export default async function IndustriesBody({ lang }: { lang: Locale }) {
+  const { industriesPage } = await getDictionary(lang);
+
   return (
     <section className={s.container}>
       <div className={s.content}>
         <div className={s.content_wrapper}>
-          <p>
-            <p className={s.title}>
-              Tailored and compliant solutions in the technical fields
-            </p>
-            At Open Commissioning, our commitment to providing world-class
-            commissioning and workforce solutions extends to a wide range of
-            engineering companies and projects that rely on advanced equipment
-            and cutting-edge technologies. Our expertise knows no boundaries and
-            we are ready to serve a wide range of industries to ensure seamless
-            project delivery and success.
-          </p>
+          <div>
+            <p className={s.title}>{industriesPage.industriesBody.textTitle}</p>
+            {industriesPage.industriesBody.text1}
+          </div>
 
-          <p>
-            Whatever the industry or project type, Open Commissioning brings a
-            wealth of experience, expertise and adaptability. Our dedicated team
-            of commissioning engineers and supervisors are well equipped to
-            handle the unique challenges and requirements of each sector,
-            ensuring that your project is executed with precision, efficiency
-            and compliance.
-          </p>
+          <p>{industriesPage.industriesBody.text2}</p>
         </div>
       </div>
       <div className={s.image}>
         <Image
           src={photo}
-          alt="Services body photo"
+          alt="Industries body photo"
           width={500}
           height={500}
           style={{
@@ -49,13 +35,3 @@ export default function IndustriesBody() {
     </section>
   );
 }
-
-const Contact = styled.p`
-  /* padding: 20px 0; */
-  font-weight: 600;
-  color: ${({ theme }) => theme.darken_primary};
-
-  :hover {
-    text-decoration: underline;
-  }
-`;

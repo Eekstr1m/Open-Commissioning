@@ -2,10 +2,9 @@
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import s from "./ContactForm.module.scss";
-import styled from "styled-components";
 import { useState } from "react";
 
-export const sendContactFrom = async (data: any) =>
+export const sendContactForm = async (data: any, errMsg: string) =>
   fetch("/api/contact", {
     method: "POST",
     body: JSON.stringify(data),
@@ -14,7 +13,7 @@ export const sendContactFrom = async (data: any) =>
       Accept: "application/json",
     },
   }).then((res) => {
-    if (!res.ok) throw new Error("Failed to send message");
+    if (!res.ok) throw new Error(errMsg);
     return res.json();
   });
 
@@ -24,7 +23,25 @@ export type FormValuesType = {
   messageText: string;
 };
 
-export default function ContactForm() {
+type ContactText = {
+  labels: {
+    nameLabel: string;
+    emailLabel: string;
+    messageLabel: string;
+    button: string;
+  };
+  errors: {
+    requiredError: string;
+    invalidEmailError: string;
+    sendMessageError: string;
+  };
+};
+
+export default function ContactForm({
+  contactText,
+}: {
+  contactText: ContactText;
+}) {
   const [errorForm, setErrorForm] = useState("");
 
   const formik = useFormik({
@@ -34,13 +51,15 @@ export default function ContactForm() {
       messageText: "",
     },
     validationSchema: Yup.object({
-      fullName: Yup.string().required("Required"),
-      email: Yup.string().email("Invalid email address").required("Required"),
-      messageText: Yup.string().required("Required"),
+      fullName: Yup.string().required(contactText.errors.requiredError),
+      email: Yup.string()
+        .email(contactText.errors.invalidEmailError)
+        .required(contactText.errors.requiredError),
+      messageText: Yup.string().required(contactText.errors.requiredError),
     }),
     onSubmit: async (values, { resetForm }) => {
       try {
-        await sendContactFrom(values);
+        await sendContactForm(values, contactText.errors.sendMessageError);
         resetForm();
       } catch (error: any) {
         setErrorForm(error.message);
@@ -50,111 +69,52 @@ export default function ContactForm() {
 
   return (
     <form className={s.form} onSubmit={formik.handleSubmit}>
-      {errorForm && <ErrorMsg>{errorForm}</ErrorMsg>}
+      {errorForm && <div className={s.err_msg}>{errorForm}</div>}
 
-      <Input
+      <input
+        className={s.input}
         id="fullName"
         name="fullName"
         type="text"
         onChange={formik.handleChange}
         onBlur={formik.handleBlur}
         value={formik.values.fullName}
-        placeholder="Name*"
+        placeholder={contactText.labels.nameLabel}
       />
       {formik.touched.fullName && formik.errors.fullName ? (
-        <ErrorMsg>{formik.errors.fullName}</ErrorMsg>
+        <div className={s.err_msg}>{formik.errors.fullName}</div>
       ) : null}
 
-      <Input
+      <input
+        className={s.input}
         id="email"
         name="email"
         type="email"
         onChange={formik.handleChange}
         onBlur={formik.handleBlur}
         value={formik.values.email}
-        placeholder="Email*"
+        placeholder={contactText.labels.emailLabel}
       />
       {formik.touched.email && formik.errors.email ? (
-        <ErrorMsg>{formik.errors.email}</ErrorMsg>
+        <div className={s.err_msg}>{formik.errors.email}</div>
       ) : null}
 
-      <TextArea
+      <textarea
+        className={s.textarea}
         id="messageText"
         name="messageText"
         onChange={formik.handleChange}
         onBlur={formik.handleBlur}
         value={formik.values.messageText}
-        placeholder="Your Message*"
+        placeholder={contactText.labels.messageLabel}
       />
       {formik.touched.messageText && formik.errors.messageText ? (
-        <ErrorMsg>{formik.errors.messageText}</ErrorMsg>
+        <div className={s.err_msg}>{formik.errors.messageText}</div>
       ) : null}
 
-      <Button type="submit">Submit</Button>
+      <button className={s.button} type="submit">
+        {contactText.labels.button}
+      </button>
     </form>
   );
 }
-
-const Input = styled.input`
-  width: 100%;
-  height: 40px;
-  border-radius: 5px;
-  border: 1px ${({ theme }) => theme.primary} solid;
-
-  padding: 15px;
-
-  outline: 0;
-  transition: border 0.2s linear;
-
-  font-family: inherit;
-  font-size: 14px;
-
-  &:focus {
-    border: 1px ${({ theme }) => theme.hover} solid;
-  }
-`;
-
-const TextArea = styled.textarea`
-  width: 100%;
-  height: 60px;
-  min-height: 60px;
-  border-radius: 5px;
-  border: 1px ${({ theme }) => theme.primary} solid;
-
-  padding: 15px;
-
-  outline: 0;
-  transition: border 0.2s linear;
-
-  font-family: inherit;
-  font-size: 14px;
-
-  resize: vertical;
-
-  &:focus {
-    border: 1px ${({ theme }) => theme.darken_primary} solid;
-  }
-`;
-
-const Button = styled.button`
-  color: #fff;
-  background-color: ${({ theme }) => theme.orange};
-  padding: 15px 40px;
-
-  font-weight: 800;
-  border-radius: 7px;
-  border: none;
-
-  cursor: pointer;
-  transition: all 0.2s linear;
-
-  &:hover {
-    color: ${({ theme }) => theme.main};
-    background-color: ${({ theme }) => theme.hover};
-  }
-`;
-
-const ErrorMsg = styled.div`
-  color: #ff3333;
-  line-height: 0;
-`;

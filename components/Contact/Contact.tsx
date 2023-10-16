@@ -1,42 +1,27 @@
 import ContactForm from "./ContactForm/ContactForm";
 import s from "./Contact.module.scss";
-import styled from "styled-components";
+import { Locale } from "@/i18n.config";
+import { getDictionary } from "@/lib/dictionary";
 
-export default function Contact() {
+export default async function Contact({ lang }: { lang: Locale }) {
+  const { contactPage } = await getDictionary(lang);
+
   return (
-    <ContactSection>
+    <section className={s.container}>
       <div>
-        <div className={s.title}>Have Questions?</div>
+        <div className={s.title}>{contactPage.contact.title}</div>
         <div className={s.info}>
           <div>
-            <p className={s.info_title}>Call Us:</p>
-            <InfoDesc>+1234567890</InfoDesc>
+            <p className={s.info_title}>{contactPage.contact.info1}</p>
+            <p className={s.info_desc}>{contactPage.contact.desc1}</p>
           </div>
           <div>
-            <p className={s.info_title}>Send Us Mail:</p>
-            <InfoDesc>info@example.com</InfoDesc>
+            <p className={s.info_title}>{contactPage.contact.info2}</p>
+            <p className={s.info_desc}>{contactPage.contact.desc2}</p>
           </div>
         </div>
       </div>
-      <ContactForm />
-    </ContactSection>
+      <ContactForm contactText={contactPage.form} />
+    </section>
   );
 }
-
-const ContactSection = styled.section`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  padding: 50px 0;
-  gap: 30px;
-  place-items: center;
-
-  max-width: var(--max-width);
-  margin: 0 auto;
-`;
-
-const InfoDesc = styled.p`
-  color: ${({ theme }) => theme.darken_primary};
-
-  /* color: ${({ theme }) =>
-    theme.name === "dark-theme" ? theme.darken_primary : theme.orange}; */
-`;

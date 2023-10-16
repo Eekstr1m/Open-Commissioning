@@ -1,5 +1,8 @@
-@import "app/library";
-
+.section {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-color: var(--bg_primary);
+}
 .wrapper {
   max-width: var(--max-width);
   margin: 0 auto;

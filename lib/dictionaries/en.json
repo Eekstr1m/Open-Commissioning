@@ -1,0 +1,325 @@
+{
+  "navigation": {
+    "aboutUs": "About Us",
+    "services": "Services",
+    "safety": "Safety",
+    "industries": "Industries",
+    "contact": "Contact",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "rights": "All Rights Reserved",
+    "servicesNames": {
+      "supervision": "Supervision",
+      "commissioning": "Commissioning",
+      "siteManagement": "Site Management",
+      "technicalService": "Technical Service"
+    }
+  },
+  "homePage": {
+    "head": {
+      "title": "Get ahead with",
+      "description": "In the dynamic landscape of modern industry, ensuring the efficient functioning of complex systems and facilities is paramount. That’s where Open Commissioning steps in as your trusted partner. We are a company dedicated to delivering top-tier commissioning, supervision, site management, technical service, and vacation replacement services.",
+      "button": "View All Services"
+    },
+    "caseStudies": {
+      "title": "Client Testimonials",
+      "name": "John Simpson",
+      "text": "Open Commissioning exceeded our expectations. Their attention to detail and commitment to quality transformed our project into a resounding success. We couldn’t have done it without them!"
+    },
+    "services": {
+      "title": "Key Topics",
+      "service1": "Supervision",
+      "desc1": "With our seasoned supervisors overseeing your project, you can rest assured that every detail is meticulously attended to. Our supervision services encompass quality control, progress monitoring, and resource management to keep your project on track.",
+      "service2": "Site Management",
+      "desc2": "Effective site management is essential for the success of any project. Open Commissioning offers dedicated site management services to ensure a well-organized, safe, and productive work environment.",
+      "service3": "Technical Service",
+      "desc3": "Our technical experts are equipped to handle any technical challenges that may arise during your project. Whether it’s troubleshooting, system optimization, or maintenance, our team is ready to provide timely and effective solutions.",
+      "service4": "Commissioning",
+      "desc4": "Our team of experienced professionals specializes in commissioning services, ensuring that your project is operating as intended. We meticulously test and verify all systems to guarantee optimal functionality, safety, and compliance with industry standards.",
+      "service5": "Safety",
+      "desc5": "Safety during commissioning is paramount. It requires rigorous planning, meticulous execution and constant vigilance to prevent accidents and ensure a safe working environment. Prioritizing safety not only protects personnel, but also contributes to the successful and smooth completion of projects.",
+      "readMore": "Read More"
+    },
+    "featuresBenefits": {
+      "title": "Features & Benefits",
+      "featuresTitle": "Features",
+      "features": [
+        "Tech Solutions",
+        "Workforce Analytics",
+        "Talent Management",
+        "Customizable Solutions",
+        "Affordable Pricing"
+      ],
+      "benefitsTitle": "Benefits",
+      "benefits": [
+        "Streamlined Processes",
+        "Increased Productivity",
+        "Reduced Costs",
+        "Improved Employee Satisfaction",
+        "Innovative Solutions"
+      ]
+    }
+  },
+  "industriesPage": {
+    "title": "Industries",
+    "industriesDesc": {
+      "title": "Industries we serve",
+      "desc": "Here are some of the most popular industries that we are proud to support:",
+      "content": [
+        { "icon": "fa-solid fa-wheat-awn", "name": "Agriculture" },
+        { "icon": "fa-solid fa-bolt", "name": "Power & Utilities" },
+        { "icon": "fa-solid fa-gauge-high", "name": "Automation" },
+        { "icon": "fa-solid fa-flask", "name": "Oil & Fat" },
+        { "icon": "fa-solid fa-trowel-bricks", "name": "Construction" },
+        { "icon": "fa-solid fa-toolbox", "name": "Manufacturing" },
+        { "icon": "fa-solid fa-microchip", "name": "Technology & IT" },
+        { "icon": "fa-brands fa-envira", "name": "Environment" }
+      ]
+    },
+    "industriesBody": {
+      "textTitle": "Tailored and compliant solutions in the technical fields",
+      "text1": "At Open Commissioning, our commitment to providing world-class commissioning and workforce solutions extends to a wide range of engineering companies and projects that rely on advanced equipment and cutting-edge technologies. Our expertise knows no boundaries and we are ready to serve a wide range of industries to ensure seamless project delivery and success.",
+      "text2": "Whatever the industry or project type, Open Commissioning brings a wealth of experience, expertise and adaptability. Our dedicated team of commissioning engineers and supervisors is well equipped to handle the unique challenges and requirements of each sector, ensuring that your project is executed with precision, efficiency and compliance."
+    }
+  },
+  "servicesPage": {
+    "title": "Services",
+    "servicesDesc": {
+      "title": "Our Services",
+      "desc": "Open Commissioning facilitates global technical expansion with compliant workforce solutions",
+      "buttons": {
+        "1": "Read More",
+        "2": "More info",
+        "3": "Explore further",
+        "4": "Learn More"
+      }
+    },
+    "servicesBody": {
+      "textTitle": "Customized and compliant engineering solutions",
+      "text1": "Open Commissioning is your trusted partner in delivering tailored and compliant solutions across a range of technical disciplines. Our global presence, combined with our extensive expertise and highly skilled workforce, enables us to support projects worldwide. We specialize in creating solutions that are not only compliant but also adaptable, minimizing your risk and helping you to achieve your goals.",
+      "text2": "Our primary areas of operation include the international construction, marine, energy and food processing industries. We have technical specialists strategically located around the world with core competencies in supervision, commissioning, consultancy and global mobility.",
+      "contactText": "Got a challenging project on the horizon? Contact us today.",
+      "button": "Contact Us"
+    },
+    "servicesBlock": {
+      "title": "Our process",
+      "desc": "Your path to success with Open Commissioning, we’ve refined our process to ensure seamless project delivery and customer satisfaction.",
+      "content": {
+        "1": "Plan",
+        "2": "Execute",
+        "3": "Monitor",
+        "4": "Conclude"
+      }
+    }
+  },
+  "safetyPage": {
+    "title": "Safety",
+    "safetyBody": {
+      "textTitle": "Ensuring Workplace Safety",
+      "text1": "Understanding different hazard types and their specific names is vital for workplace safety. It goes beyond compliance, forming an ethical business practice foundation. Recognizing hazards, such as physical, chemical, biological, and ergonomic risks, enables proactive risk mitigation. Equipping employees with this knowledge fosters an alert culture, enhancing response to emergencies. This prioritization of hazard awareness ensures a safer, healthier, and more productive work environment. Safety during commissioning is a collective responsibility involving various teams, from design to operations and the HSE team. Safety begins with the design team, where safer elements are integrated, emphasizing that safety is everyone’s commitment throughout the commissioning process.",
+      "text2": "Starting with the design team, safety considerations begin at the earliest stages. If a system can be designed to inherently improve safety, it’s incorporated into the plans. Whether it’s guards, railings or safer access methods, safer design options are incorporated from the outset. This collaborative approach emphasizes that safety is not someone else’s problem - it’s everyone’s responsibility and it’s woven into every facet of the commissioning process."
+    },
+    "safetyContent": {
+      "title": "Prioritizing Safety in Commissioning",
+      "content": {
+        "red": "The use of prohibition signs during commissioning is essential to maintain a safe and controlled work environment. These signs communicate crucial instructions, such as \"No access for unauthorized personnel\" or \"Do not enter,\" emphasizing the importance of restricting certain areas or actions. By clearly indicating areas that are off-limits or actions that should be avoided, prohibition signs play a vital role in preventing accidents, ensuring compliance with safety protocols, and safeguarding both personnel and the project’s integrity.",
+        "yellow": "Warning signs play a pivotal role during commissioning by alerting personnel to potential hazards and risks. These signs convey essential messages like \"Caution: High Voltage\" or \"Danger: Confined Space,\" emphasizing the need for heightened awareness and precaution. By using warning signs effectively, project managers and workers can proactively identify and mitigate potential dangers, ensuring a safer commissioning process and reducing the risk of accidents or injuries.",
+        "blue": "Mandatory signs serve a critical purpose during commissioning by clearly outlining specific actions or behaviors that are required for safety and compliance. These signs, such as \"Wear Safety Glasses\" or \"Use Safety Harness,\" ensure that essential safety measures are followed without compromise. By using mandatory signs effectively, project teams establish a culture of responsibility, minimizing risks and contributing to a secure working environment essential for a successful commissioning process.",
+        "green": "Emergency signs are indispensable during commissioning, providing critical guidance to personnel in the event of unforeseen situations. These signs include essential information about the location of exits, escape routes, emergency equipment like eyewash stations, and first aid kits. By prominently displaying emergency signs, project teams ensure that individuals can quickly and safely navigate the workspace during emergencies, mitigating potential risks and enhancing overall safety during the commissioning process."
+      }
+    }
+  },
+  "supervisionPage": {
+    "title": "Supervision",
+    "body": {
+      "textTitle": "Your trusted partner for project supervision",
+      "text1": "Project supervision is a critical, yet often challenging and time-sensitive task when launching a new project. Finding the perfect talent pool isn’t always easy, and constraints such as full-time employment and budget limitations can further complicate the process. If your project extends overseas, navigating complex global compliance requirements can add another layer of complexity.",
+      "text2": "Backed by our extensive knowledge of global compliance regulations, we take full responsibility for ensuring your project meets all the necessary requirements. This includes everything from visa procurement and payroll management to work permit applications and administrative arrangements. With Open Commissioning, you can be confident that every detail will be meticulously managed.",
+      "text3": "All you need to do is describe your project and we will do the rest. We believe in making project oversight effortless, allowing you to focus on the core objectives of your project’s success, while we manage the intricacies of workforce coordination and global compliance.",
+      "text4": "Our international team of experienced superintendents act as your trusted local representatives, diligently safeguarding your interests throughout the construction process. They are committed to ensuring that your project meets the highest standards of safety, regulatory compliance, quality and cost effectiveness.",
+      "text5": "Our extensive workforce spans the globe and is made up exclusively of highly skilled supervisors with a wealth of experience from a wide range of projects. This collective expertise enables us to comprehensively oversee every facet of your construction project, from the initial pre-construction planning stages to the final meticulous review.",
+      "text6": "Our responsibilities include on-site inspections, meticulous material quality testing, vigilant enforcement of safety standards, prudent approval of change orders when required, seamless coordination with contractors and subcontractors, and vigilant supervision of both on-site and remote personnel. With our dedicated team at your side, your project is in expert hands from start to finish."
+    }
+  },
+  "commissioningPage": {
+    "title": "Commissioning",
+    "body": {
+      "textTitle": "Streamlining your commissioning phase",
+      "text1": "Navigating the commissioning phase can often present significant challenges in the search for specialized expertise. Factors such as a surge in new projects, delays in ongoing projects and other variables can overwhelm your in-house commissioning team.",
+      "text2": "This necessitates external recruitment, a step that can introduce numerous hurdles and potentially jeopardies project deadlines. Finding candidates with the exact knowledge and skills required becomes a complex puzzle, compounded by constraints on both full-time recruitment capacity and project pipelines.",
+      "text3": "For overseas projects, the imperative of global compliance is compounded by the need for extended onsite presence by commissioning engineers.",
+      "text4": "We have a specialized and well-traveled team of commissioning engineers, each with expertise honed across multiple industries, ready and willing to meet the unique needs of your project.",
+      "text5": "Our engineers excel at the meticulous orchestration of project systems and components, ensuring that every facet is in harmony with your or your end customer’s operational specifications. With a wealth of experience from projects spanning the globe, they’ve become masters of adaptability, seamlessly navigating project delays and embracing the richness of cultural diversity.",
+      "text6": "If required, our engineers are ready to extend their on-site presence, reducing the need for frequent engineering changes and minimizing the potential for error. When on site, they wear your company’s name as a badge of honour and serve as dedicated representatives of your vision and goals.",
+      "text7": "Once we’ve selected the right engineer for your project, our dedicated team will take care of all the administrative tasks. All administrative tasks are carried out with an unwavering commitment to compliance, utilizing cost effective solutions that are seamlessly aligned with country regulations. Are you struggling to find the expertise you need for your go-live?"
+    }
+  },
+  "siteManagementPage": {
+    "title": "Site Management",
+    "body": {
+      "textTitle": "Global site management expertise",
+      "text1": "Today’s project leadership requires a unique blend of managerial skills, analytical acumen and planning excellence. In addition, the digital landscape has expanded the role of project leaders, making proficiency with ERP and CMMS software essential.",
+      "text2": "This distinctive skill set can make finding the perfect project manager a daunting task. If your project spans international borders, the pool of qualified candidates shrinks even further, increasing the need for global compliance.",
+      "text3": [
+        "- Resource optimization",
+        "- Budget control and project efficiency",
+        "- Health, safety and environmental compliance",
+        "- Quality assurance and control",
+        "- Streamlined document management"
+      ],
+      "text4": "Once on site, our Site Managers integrate seamlessly into your project, becoming the liaison between on-site personnel and off-site stakeholders. They act as staunch advocates for your organization, working diligently to ensure your project stays on track and within budget.",
+      "text5": "At Open Commissioning, we provide you with a team of globally experienced Site Managers with a wealth of industry-specific knowledge ready to support your project. Our Site Managers are multi-skilled professionals with electrical and mechanical expertise. They excel in critical areas such as project planning, resource optimization, risk mitigation and quality assurance.",
+      "text6": "What sets our Site Managers apart is their unique ability to combine a commercial perspective with technical acumen. This enables them to communicate effectively across different hierarchies, bridging the gap between supervisors, project managers, subcontractors and your end client.",
+      "text7": "We understand that every project is unique, with its own set of challenges and potential disruptions. That’s why our Site Managers are prepared to commit to extended on-site stays, reducing the need for frequent transitions between team members and minimizing the likelihood of errors."
+    }
+  },
+  "technicalServicePage": {
+    "title": "Technical Service",
+    "body": {
+      "textTitle": "Boost your project with our dedicated engineers",
+      "text1": "Recruiting skilled personnel for heavy industry projects can be a daunting challenge for many organizations. This sector requires not only deep technical knowledge, but also a thorough understanding of the ever-increasing emphasis on Health, Safety, Environment and Quality (HSEQ) standards.",
+      "text2": "The pool of qualified candidates for short-term assignments remains limited and often lacks the job security and benefits associated with long-term positions.",
+      "text3": "At Open Commissioning, we offer global support for projects through our experienced and well-traveled technicians who are true experts in their respective fields, including:",
+      "text4": [
+        "- Electrical",
+        "- Automation",
+        "- Mechanical",
+        "- Technology",
+        "- Safety"
+      ],
+      "text5": "Our workforce brings a wealth of experience from a wide range of industries and is ready to work on your project wherever it is located in the world.",
+      "text6": "When it comes to complex projects, we offer a flexible approach that seamlessly adapts to your exact requirements. Whether you need a single expert or an entire team, we will tailor our solution to fit your needs.",
+      "text7": "As an integral part of our working relationship, you also have the option of appointing one of our experienced supervisors. They will take responsibility for overseeing all management aspects, including approving change orders and harmonizing efforts with contractors and subcontractors.",
+      "text8": "Throughout the project lifecycle, we remain agile, ready to recalibrate the original solution to deal with unforeseen events such as delays or extensions. In addition, we have the ability to rapidly expand or contract the assembled team, ensuring unwavering alignment with your evolving project requirements.",
+      "text9": "Once we have assembled the ideal team for your project, our experienced back-office professionals take responsibility for all administrative functions, ensuring compliant and cost-effective solutions that comply with each country’s regulations. From contracts to work permits and insurance, we meticulously manage every aspect, allowing you to focus on your core business."
+    }
+  },
+  "contactPage": {
+    "title": "Contact Us",
+    "contact": {
+      "title": "Got Questions?",
+      "info1": "Call Us:",
+      "desc1": "+1234567890",
+      "info2": "E-mail Us:",
+      "desc2": "info@example.com"
+    },
+    "form": {
+      "labels": {
+        "nameLabel": "Name*",
+        "emailLabel": "Email*",
+        "messageLabel": "Your Message*",
+        "button": "Submit"
+      },
+      "errors": {
+        "requiredError": "*This field is required",
+        "invalidEmailError": "*Please enter a valid email address",
+        "sendMessageError": "Failed to send message"
+      }
+    },
+    "content": {
+      "text1": "We respect your privacy and will only use your personal data to provide requested products/services. We may contact you about our products/services and other content of interest."
+    }
+  },
+  "privacyPolicyPage": {
+    "title": "Privacy Policy",
+    "version": "Version 1, 24.09.2023",
+    "content": {
+      "1": {
+        "title": "1. Introduction",
+        "text1": "Welcome to Open Commissioning (\"we,\" \"our,\" or \"us\"). We value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal data when you visit our website or use our services.",
+        "text2": "We are not obliged to have a data protection officer, so any inquiries about our use of your personal data should be addressed to the contact details above. By accessing or using our website or services, you consent to the practices described in this Privacy Policy."
+      },
+      "2": {
+        "title": "2. Information We Collect",
+        "text1": "We may collect the following types of personal information:",
+        "text2": [
+          "Contact Information: Name, email address, phone number, or other identifiers.",
+          "Usage Data: Information about your interactions with our website, including IP address, browser type, pages viewed, and access times.",
+          "Cookies and Tracking Technologies: We may use cookies and similar technologies to enhance your experience on our website.",
+          "Payment Information: If applicable, we may collect payment and billing information for transactions on our website.",
+          "Other Information: Any other information you choose to provide voluntarily."
+        ]
+      },
+      "3": {
+        "title": "3. How We Use Your Information",
+        "text1": "We may use your personal information for the following purposes:",
+        "text2": "Provide and maintain our website and services. Respond to your requests, comments, or questions. Send you updates, newsletters, or promotional materials. Process transactions and send transaction notifications. Improve and personalize your experience on our website. Monitor and analyze usage patterns and trends. Comply with legal obligations and protect our rights."
+      },
+      "4": {
+        "title": "4. Disclosure of Your Information",
+        "text1": "We may share your personal information with:",
+        "text2": [
+          "Service Providers: Third-party companies or individuals who assist us in operating our website and providing services.",
+          "Legal Requirements: To comply with legal obligations, respond to legal requests, or protect our rights.",
+          "Business Transfers: In connection with a merger, acquisition, or sale of all or a portion of our assets.",
+          "With Your Consent: When you give us explicit permission to share your information."
+        ]
+      },
+      "5": {
+        "title": "5. Your Rights",
+        "text1": "You have certain rights regarding your personal information:",
+        "text2": [
+          "Access: You can request access to the personal information we hold about you.",
+          "Correction: You can request corrections to inaccurate or incomplete data.",
+          "Deletion: You can request the deletion of your personal information under certain circumstances.",
+          "Data Portability: You can request the transfer of your data to another party."
+        ]
+      },
+      "6": {
+        "title": "6. Security",
+        "text1": "We take reasonable measures to protect your personal information from unauthorized access or disclosure. However, no method of transmission over the internet or electronic storage is entirely secure."
+      },
+      "7": {
+        "title": "7. Changes to This Privacy Policy",
+        "text1": "We reserve the right to update this Privacy Policy at any time. We will notify you of any changes by posting the updated policy on this page."
+      },
+      "8": {
+        "title": "8. Contact Us",
+        "text1": [
+          "If you have any questions or concerns about this Privacy Policy or our practices, please contact us at:",
+          "Phone number: +123456789",
+          "Email: info@example.com"
+        ]
+      }
+    }
+  },
+  "termsOfServicePage": {
+    "title": "Terms of Service",
+    "version": "Version 1, 24.09.2023",
+    "content": {
+      "1": {
+        "title": "1. Acceptance of Terms",
+        "text1": "Welcome to Open Commissioning (\"we,\" \"our,\" or \"us\"). We value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal data when you visit our website or use our services."
+      },
+      "2": {
+        "title": "2. Use of Our Website",
+        "text1": "You must be at least 18 years old to use our website. You agree to use our website and services in compliance with all applicable laws and regulations."
+      },
+      "3": {
+        "title": "3. Intellectual Property",
+        "text1": "All content on our website, including text, graphics, logos, and images, is the property of Open Commissioning or its licensors and is protected by copyright and other intellectual property laws.",
+        "text2": "You may not use our intellectual property without our written consent."
+      },
+      "4": {
+        "title": "4. Disclaimer of Warranties",
+        "text1": "Our website and services are provided \"as is\" and \"as available\" without any warranties, express or implied. We make no representations or warranties regarding the accuracy, completeness, or reliability of our content or services."
+      },
+      "5": {
+        "title": "5. Limitation of Liability",
+        "text1": "We shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from the use of our website or services."
+      },
+      "6": {
+        "title": "6. Changes to Terms",
+        "text1": "We reserve the right to update these Terms of Service at any time. We will notify you of any changes by posting the updated terms on this page."
+      },
+      "7": {
+        "title": "7. Зв'язок з нами",
+        "text1": [
+          "Якщо у вас виникли запитання або занепокоєння щодо цієї Політики конфіденційності або наших практик, будь ласка, зв'яжіться з нами за адресою:",
+          "Номер телефону: +123456789",
+          "Електронна пошта: info@example.com"
+        ]
+      }
+    }
+  }
+}
