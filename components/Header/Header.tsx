@@ -7,6 +7,7 @@ import logoPNG from "@/assets/logo4.png";
 import ThemeButton from "./ThemeButton";
 import { Locale } from "@/i18n.config";
 import { getDictionary } from "@/lib/dictionary";
+import LanguageButton from "./LanguageButton";
 
 export default async function Header({ lang }: { lang: Locale }) {
   const { navigation } = await getDictionary(lang);
@@ -98,10 +99,14 @@ export default async function Header({ lang }: { lang: Locale }) {
                   {navigation.contact}
                 </Button>
               </li>
+              <div
+                style={{ display: "flex", gap: "15px", alignItems: "center" }}
+              >
+                <LanguageButton />
+                <ThemeButton />
+              </div>
             </ul>
           </div>
-
-          <ThemeButton />
         </div>
       </div>
     </div>

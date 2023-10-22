@@ -39,8 +39,8 @@
   }
   .image {
     place-items: center;
-    // &:nth-of-type(1) {
-    //   order: 4;
-    // }
+    &:nth-of-type(1) {
+      order: 4;
+    }
   }
 }

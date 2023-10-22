@@ -18,7 +18,7 @@
   "homePage": {
     "head": {
       "title": "Get ahead with",
-      "description": "In the dynamic landscape of modern industry, ensuring the efficient functioning of complex systems and facilities is paramount. That’s where Open Commissioning steps in as your trusted partner. We are a company dedicated to delivering top-tier commissioning, supervision, site management, technical service, and vacation replacement services.",
+      "description": "In the dynamic landscape of modern industry, ensuring the efficient functioning of complex systems and facilities is paramount. That’s where Open Commissioning steps in as your trusted partner. We are a company dedicated to delivering top-tier commissioning, supervision, site management and technical service.",
       "button": "View All Services"
     },
     "caseStudies": {
@@ -37,7 +37,7 @@
       "service4": "Commissioning",
       "desc4": "Our team of experienced professionals specializes in commissioning services, ensuring that your project is operating as intended. We meticulously test and verify all systems to guarantee optimal functionality, safety, and compliance with industry standards.",
       "service5": "Safety",
-      "desc5": "Safety during commissioning is paramount. It requires rigorous planning, meticulous execution and constant vigilance to prevent accidents and ensure a safe working environment. Prioritizing safety not only protects personnel, but also contributes to the successful and smooth completion of projects.",
+      "desc5": "Safety during commissioning is paramount. It requires rigorous planning, meticulous execution and constant vigilance to prevent accidents and ensure a safe working environment. Prioritizing safety not only protects personnel, but also contributes to the successful.",
       "readMore": "Read More"
     },
     "featuresBenefits": {
@@ -117,7 +117,8 @@
     "safetyBody": {
       "textTitle": "Ensuring Workplace Safety",
       "text1": "Understanding different hazard types and their specific names is vital for workplace safety. It goes beyond compliance, forming an ethical business practice foundation. Recognizing hazards, such as physical, chemical, biological, and ergonomic risks, enables proactive risk mitigation. Equipping employees with this knowledge fosters an alert culture, enhancing response to emergencies. This prioritization of hazard awareness ensures a safer, healthier, and more productive work environment. Safety during commissioning is a collective responsibility involving various teams, from design to operations and the HSE team. Safety begins with the design team, where safer elements are integrated, emphasizing that safety is everyone’s commitment throughout the commissioning process.",
-      "text2": "Starting with the design team, safety considerations begin at the earliest stages. If a system can be designed to inherently improve safety, it’s incorporated into the plans. Whether it’s guards, railings or safer access methods, safer design options are incorporated from the outset. This collaborative approach emphasizes that safety is not someone else’s problem - it’s everyone’s responsibility and it’s woven into every facet of the commissioning process."
+      "text2": "Starting with the design team, safety considerations begin at the earliest stages. If a system can be designed to inherently improve safety, it’s incorporated into the plans. Whether it’s guards, railings or safer access methods, safer design options are incorporated from the outset. This collaborative approach emphasizes that safety is not someone else’s problem - it’s everyone’s responsibility and it’s woven into every facet of the commissioning process.",
+      "text3": "Furthermore, our safety  position approach encompasses regular safety audits and evaluations to identify and rectify potential risks. We believe that maintaining an unwavering focus on safety throughout the project's lifecycle not only safeguards our workforce but also leads to more efficient and successful project outcomes."
     },
     "safetyContent": {
       "title": "Prioritizing Safety in Commissioning",
@@ -125,7 +126,7 @@
         "red": "The use of prohibition signs during commissioning is essential to maintain a safe and controlled work environment. These signs communicate crucial instructions, such as \"No access for unauthorized personnel\" or \"Do not enter,\" emphasizing the importance of restricting certain areas or actions. By clearly indicating areas that are off-limits or actions that should be avoided, prohibition signs play a vital role in preventing accidents, ensuring compliance with safety protocols, and safeguarding both personnel and the project’s integrity.",
         "yellow": "Warning signs play a pivotal role during commissioning by alerting personnel to potential hazards and risks. These signs convey essential messages like \"Caution: High Voltage\" or \"Danger: Confined Space,\" emphasizing the need for heightened awareness and precaution. By using warning signs effectively, project managers and workers can proactively identify and mitigate potential dangers, ensuring a safer commissioning process and reducing the risk of accidents or injuries.",
         "blue": "Mandatory signs serve a critical purpose during commissioning by clearly outlining specific actions or behaviors that are required for safety and compliance. These signs, such as \"Wear Safety Glasses\" or \"Use Safety Harness,\" ensure that essential safety measures are followed without compromise. By using mandatory signs effectively, project teams establish a culture of responsibility, minimizing risks and contributing to a secure working environment essential for a successful commissioning process.",
-        "green": "Emergency signs are indispensable during commissioning, providing critical guidance to personnel in the event of unforeseen situations. These signs include essential information about the location of exits, escape routes, emergency equipment like eyewash stations, and first aid kits. By prominently displaying emergency signs, project teams ensure that individuals can quickly and safely navigate the workspace during emergencies, mitigating potential risks and enhancing overall safety during the commissioning process."
+        "green": "ATEX Ex is a European directive that regulates equipment and protective systems intended for use in potentially explosive atmospheres. We work to strict ATEX Ex standards to ensure the safety of our operations in such hazardous environments. By implementing ATEX Ex guidelines, we rigorously assess and select equipment designed to prevent explosions, reducing the risks associated with flammable substances and ensuring a safe and compliant working environment for our teams."
       }
     }
   },
