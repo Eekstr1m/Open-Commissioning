@@ -6,7 +6,6 @@ import Script from "next/script";
 import { Locale } from "@/i18n.config";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
-import LanguageButton from "@/components/LanguageButton/LanguageButton";
 
 const nunito = Nunito({ subsets: ["latin"] });
 
@@ -30,7 +29,6 @@ export default function RootLayout({
       ></Script>
       <body className={nunito.className}>
         <ThemeChangeProvider>
-          <LanguageButton />
           <Header lang={params.lang} />
           {children}
           <Footer lang={params.lang} />

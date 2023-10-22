@@ -36,7 +36,7 @@ export default async function SafetyContent({ lang }: { lang: Locale }) {
 
       <div className={s.item}>
         <div>
-          <Image src={greenSign.src} alt="" width={150} height={150} />
+          <Image src={greenSign.src} alt="" width={150} height={140} />
         </div>
         <p>{safetyPage.safetyContent.content.green}</p>
       </div>
