@@ -103,7 +103,8 @@
     },
     "servicesBlock": {
       "title": "Our process",
-      "desc": "Your path to success with Open Commissioning, we’ve refined our process to ensure seamless project delivery and customer satisfaction.",
+      "desc": "Your path to success with Open Commissioning.",
+      "desc2": "We’ve refined our process to ensure seamless project delivery and customer satisfaction.",
       "content": {
         "1": "Plan",
         "2": "Execute",
@@ -126,7 +127,7 @@
         "red": "The use of prohibition signs during commissioning is essential to maintain a safe and controlled work environment. These signs communicate crucial instructions, such as \"No access for unauthorized personnel\" or \"Do not enter,\" emphasizing the importance of restricting certain areas or actions. By clearly indicating areas that are off-limits or actions that should be avoided, prohibition signs play a vital role in preventing accidents, ensuring compliance with safety protocols, and safeguarding both personnel and the project’s integrity.",
         "yellow": "Warning signs play a pivotal role during commissioning by alerting personnel to potential hazards and risks. These signs convey essential messages like \"Caution: High Voltage\" or \"Danger: Confined Space,\" emphasizing the need for heightened awareness and precaution. By using warning signs effectively, project managers and workers can proactively identify and mitigate potential dangers, ensuring a safer commissioning process and reducing the risk of accidents or injuries.",
         "blue": "Mandatory signs serve a critical purpose during commissioning by clearly outlining specific actions or behaviors that are required for safety and compliance. These signs, such as \"Wear Safety Glasses\" or \"Use Safety Harness,\" ensure that essential safety measures are followed without compromise. By using mandatory signs effectively, project teams establish a culture of responsibility, minimizing risks and contributing to a secure working environment essential for a successful commissioning process.",
-        "green": "ATEX Ex is a European directive that regulates equipment and protective systems intended for use in potentially explosive atmospheres. We work to strict ATEX Ex standards to ensure the safety of our operations in such hazardous environments. By implementing ATEX Ex guidelines, we rigorously assess and select equipment designed to prevent explosions, reducing the risks associated with flammable substances and ensuring a safe and compliant working environment for our teams."
+        "green": "ATEX is a European directive that regulates equipment and protective systems intended for use in potentially explosive atmospheres. We work to strict ATEX standards to ensure the safety of our operations in such hazardous environments. By implementing ATEX guidelines, we rigorously assess and select equipment designed to prevent explosions, reducing the risks associated with flammable substances and ensuring a safe and compliant working environment for our teams."
       }
     }
   },
@@ -199,10 +200,13 @@
     "title": "Contact Us",
     "contact": {
       "title": "Got Questions?",
-      "info1": "Call Us:",
-      "desc1": "+1234567890",
-      "info2": "E-mail Us:",
-      "desc2": "info@example.com"
+      "info1": "Address:",
+      "desc1": "145 Rectory Grove, Hampton TW12 1EQ",
+      "desc12": "United Kingdom",
+      "info2": "Call Us:",
+      "desc2": "+44 7487 895703",
+      "info3": "E-mail Us:",
+      "desc3": "info@example.com"
     },
     "form": {
       "labels": {
@@ -227,7 +231,7 @@
     "content": {
       "1": {
         "title": "1. Introduction",
-        "text1": "Welcome to Open Commissioning (\"we,\" \"our,\" or \"us\"). We value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal data when you visit our website or use our services.",
+        "text1": "Welcome to Open Commissioning LTD (\"we,\" \"our,\" or \"us\"). We value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal data when you visit our website or use our services.",
         "text2": "We are not obliged to have a data protection officer, so any inquiries about our use of your personal data should be addressed to the contact details above. By accessing or using our website or services, you consent to the practices described in this Privacy Policy."
       },
       "2": {
@@ -278,7 +282,8 @@
         "title": "8. Contact Us",
         "text1": [
           "If you have any questions or concerns about this Privacy Policy or our practices, please contact us at:",
-          "Phone number: +123456789",
+          "145 Rectory Grove, Hampton TW12 1EQ, United Kingdom",
+          "Phone number: +44 7487 895703",
           "Email: info@example.com"
         ]
       }
@@ -290,7 +295,7 @@
     "content": {
       "1": {
         "title": "1. Acceptance of Terms",
-        "text1": "Welcome to Open Commissioning (\"we,\" \"our,\" or \"us\"). We value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal data when you visit our website or use our services."
+        "text1": "Welcome to Open Commissioning LTD (\"we,\" \"our,\" or \"us\"). We value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal data when you visit our website or use our services."
       },
       "2": {
         "title": "2. Use of Our Website",
@@ -314,11 +319,12 @@
         "text1": "We reserve the right to update these Terms of Service at any time. We will notify you of any changes by posting the updated terms on this page."
       },
       "7": {
-        "title": "7. Зв'язок з нами",
+        "title": "8. Contact Us",
         "text1": [
-          "Якщо у вас виникли запитання або занепокоєння щодо цієї Політики конфіденційності або наших практик, будь ласка, зв'яжіться з нами за адресою:",
-          "Номер телефону: +123456789",
-          "Електронна пошта: info@example.com"
+          "If you have any questions or concerns about this Privacy Policy or our practices, please contact us at:",
+          "145 Rectory Grove, Hampton TW12 1EQ, United Kingdom",
+          "Phone number: +44 7487 895703",
+          "Email: info@example.com"
         ]
       }
     }

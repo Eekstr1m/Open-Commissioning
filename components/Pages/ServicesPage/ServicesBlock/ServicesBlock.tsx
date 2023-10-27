@@ -10,6 +10,7 @@ export default async function ServicesBlock({ lang }: { lang: Locale }) {
       <div className={s.head}>
         <div className={s.head_title}>{servicesPage.servicesBlock.title}</div>
         <div className={s.head_text}>{servicesPage.servicesBlock.desc}</div>
+        <div className={s.head_text}>{servicesPage.servicesBlock.desc2}</div>
       </div>
 
       <div className={s.content}>
