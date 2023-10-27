@@ -22,7 +22,7 @@
   .head_title {
     font-weight: bold;
     font-size: 40px;
-    font-size: calc(40px + (50 - 40) * ((100vw - 320px) / (1920 - 320)));
+    font-size: calc(36px + (50 - 40) * ((100vw - 320px) / (1920 - 320)));
   }
 }
 .text {

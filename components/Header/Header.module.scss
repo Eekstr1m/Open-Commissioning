@@ -191,3 +191,46 @@
     cursor: pointer;
   }
 }
+
+@media only screen and (max-width: 350px) {
+  .wrapper {
+    // margin: 0 auto;
+    padding: 0;
+    align-items: center;
+    padding-right: 10px;
+  }
+  .test {
+    position: absolute;
+    top: 3px;
+  }
+  .logo {
+    img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  .logo_content {
+    padding-top: 7px;
+    margin-left: 2px;
+  }
+  .logo_text {
+    font-size: 14px;
+  }
+
+  .phrase {
+    font-size: 12px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    position: absolute;
+    top: 70%;
+    left: 50px;
+  }
+  .buttons {
+    img {
+      margin-left: 5px;
+      width: 18px !important;
+    }
+  }
+}
