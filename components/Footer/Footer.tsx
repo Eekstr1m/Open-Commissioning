@@ -13,7 +13,6 @@ export default async function Footer({ lang }: { lang: Locale }) {
       <div className={s.content}>
         <div className={s.top}>
           <div className={s.nav_block}>
-            <Link href={`/${lang}/about-us`}>{navigation.aboutUs}</Link>
             <Link href={`/${lang}/services`}>{navigation.services}</Link>
             <Link href={`/${lang}/safety`}>{navigation.safety}</Link>
             <Link href={`/${lang}/industries`}>{navigation.industries}</Link>
@@ -27,7 +26,7 @@ export default async function Footer({ lang }: { lang: Locale }) {
           {/* <LogoSVG /> */}
         </div>
         <div className={s.bottom}>
-          <div>&copy; 2023 Open Commissioning {navigation.rights}</div>
+          <div>&copy; 2023 Open Commissioning LTD {navigation.rights}</div>
           <div className={s.item}>
             <Link href={`/${lang}/privacy-policy`}>
               {navigation.privacyPolicy}

@@ -14,10 +14,15 @@ export default async function Contact({ lang }: { lang: Locale }) {
           <div>
             <p className={s.info_title}>{contactPage.contact.info1}</p>
             <p className={s.info_desc}>{contactPage.contact.desc1}</p>
+            <p className={s.info_desc}>{contactPage.contact.desc12}</p>
           </div>
           <div>
             <p className={s.info_title}>{contactPage.contact.info2}</p>
             <p className={s.info_desc}>{contactPage.contact.desc2}</p>
+          </div>
+          <div>
+            <p className={s.info_title}>{contactPage.contact.info3}</p>
+            <p className={s.info_desc}>{contactPage.contact.desc3}</p>
           </div>
         </div>
       </div>
