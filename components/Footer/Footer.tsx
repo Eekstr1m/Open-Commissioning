@@ -1,6 +1,4 @@
 import s from "./Footer.module.scss";
-import LogoSVG from "@/assets/logo.svg";
-import Image from "next/image";
 import Link from "next/link";
 import { Locale } from "@/i18n.config";
 import { getDictionary } from "@/lib/dictionary";
@@ -23,7 +21,6 @@ export default async function Footer({ lang }: { lang: Locale }) {
               style={{ color: "#fff" }}
             ></i>
           </Link>
-          {/* <LogoSVG /> */}
         </div>
         <div className={s.bottom}>
           <div className={s.rights}>
