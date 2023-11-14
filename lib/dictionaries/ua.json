@@ -203,13 +203,25 @@
     "title": "Зв’язок з нами",
     "contact": {
       "title": "Є запитання?",
-      "info1": "Адреса:",
-      "desc1": "145 Rectory Grove, Hampton TW12 1EQ",
-      "desc12": "United Kingdom",
-      "info2": "Зателефонуйте нам:",
-      "desc2": "+44 7487 895703",
-      "info3": "Напишіть нам на пошту:",
-      "desc3": "info@example.com"
+      "phone": "Телефон:",
+      "email": "Електронна пошта:",
+      "ukAddress": "Головний офіс:",
+      "uk": "145 Rectory Grove, Hampton TW12 1EQ",
+      "ukDesc": "United Kingdom",
+      "ukPhone": "+44 7487 895703",
+      "ukEmail": "oc.uk@opnc.ltd",
+      "uaAddress": "Представництво в Україні:",
+      "ua": "69035, Запорізька обл., м. Запоріжжя",
+      "ua2": "вул. Незалежної України, буд. 66",
+      "uaDesc": "Україна",
+      "uaPhone": "+",
+      "uaEmail": "oc.ua@opnc.ltd",
+      "inAddress": "Представництво в Індії:",
+      "in": "104, 3rd Floor, Balaji Enclave Dattanagar Road",
+      "in2": "Katraj, Pune",
+      "inDesc": "India",
+      "inPhone": "+91 9886293759",
+      "inEmail": "oc.in@opnc.ltd"
     },
     "form": {
       "labels": {

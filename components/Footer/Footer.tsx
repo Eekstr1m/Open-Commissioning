@@ -18,7 +18,7 @@ export default async function Footer({ lang }: { lang: Locale }) {
           <Link href={"#"}>
             <i
               className="fa-brands fa-linkedin-in fa-2xl"
-              style={{ color: "#fff" }}
+              style={{ color: "var(--fg)" }}
             ></i>
           </Link>
         </div>
@@ -26,14 +26,14 @@ export default async function Footer({ lang }: { lang: Locale }) {
           <div className={s.rights}>
             &copy; 2023 Open Commissioning LTD <span>{navigation.rights}</span>
           </div>
-          <div className={s.item}>
+          {/* <div className={s.item}>
             <Link href={`/${lang}/privacy-policy`}>
               {navigation.privacyPolicy}
             </Link>
             <Link href={`/${lang}/terms-of-service`}>
               {navigation.termsOfService}
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

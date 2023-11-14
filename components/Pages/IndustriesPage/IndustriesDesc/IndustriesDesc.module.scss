@@ -33,6 +33,7 @@
 .content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
 }
 
 @media (max-width: 950px) {
@@ -44,7 +45,7 @@
 }
 
 .item {
-  width: calc(200px + (240 - 200) * ((100vw - 320px) / (1920 - 320)));
+  width: calc(160px + (240 - 160) * ((100vw - 320px) / (1920 - 320)));
   display: flex;
   flex-direction: column;
   align-items: center;
