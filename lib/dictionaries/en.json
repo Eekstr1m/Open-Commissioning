@@ -198,13 +198,25 @@
     "title": "Contact Us",
     "contact": {
       "title": "Got Questions?",
-      "info1": "Address:",
-      "desc1": "145 Rectory Grove, Hampton TW12 1EQ",
-      "desc12": "United Kingdom",
-      "info2": "Call Us:",
-      "desc2": "+44 7487 895703",
-      "info3": "E-mail Us:",
-      "desc3": "info@example.com"
+      "phone": "Phone:",
+      "email": "E-mail:",
+      "ukAddress": "Headquarters:",
+      "uk": "145 Rectory Grove, Hampton TW12 1EQ",
+      "ukDesc": "United Kingdom",
+      "ukPhone": "+44 7487 895703",
+      "ukEmail": "oc.uk@opnc.ltd",
+      "uaAddress": "Representation in Ukraine:",
+      "ua": "69035, Zaporizka obl., Zaporizhzhia city",
+      "ua2": "vulytsia Nezalezhnoi Ukrainy, 66",
+      "uaDesc": "Ukraine",
+      "uaPhone": "+",
+      "uaEmail": "oc.ua@opnc.ltd",
+      "inAddress": "Representation in India:",
+      "in": "104, 3rd Floor, Balaji Enclave Dattanagar Road",
+      "in2": "Katraj, Pune",
+      "inDesc": "India",
+      "inPhone": "+91 9886293759",
+      "inEmail": "oc.in@opnc.ltd"
     },
     "form": {
       "labels": {

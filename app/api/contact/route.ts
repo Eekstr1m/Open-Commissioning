@@ -168,7 +168,7 @@ export async function POST(req: Request) {
       ...generateEmailContent(data),
       subject: data.fullName,
     });
-    Response.json("Success");
+    return Response.json("Success");
   } catch (error) {
     console.log(error);
     Response.error();
