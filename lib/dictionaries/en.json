@@ -7,7 +7,6 @@
     "contact": "Contact",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service",
-    "rights": "All Rights Reserved",
     "servicesNames": {
       "supervision": "Supervision",
       "commissioning": "Commissioning",
@@ -206,8 +205,8 @@
       "ukPhone": "+44 7487 895703",
       "ukEmail": "oc.uk@opnc.ltd",
       "uaAddress": "Representation in Ukraine:",
-      "ua": "69035, Zaporizka obl., Zaporizhzhia city",
-      "ua2": "vulytsia Nezalezhnoi Ukrainy, 66",
+      "ua": "69035, Zaporizka obl., Zaporizhzhia",
+      "ua2": "Nezalezhnoi Ukrainy, 66",
       "uaDesc": "Ukraine",
       "uaPhone": "+",
       "uaEmail": "oc.ua@opnc.ltd",
@@ -232,7 +231,7 @@
       }
     },
     "content": {
-      "text1": "We respect your privacy and will only use your personal data to provide requested products/services. We may contact you about our products/services and other content of interest."
+      "text1": "We respect your privacy and will only use your personal data to provide requested services. We may contact you about our services and other content of interest."
     }
   },
   "privacyPolicyPage": {

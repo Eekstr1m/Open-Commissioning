@@ -15,7 +15,6 @@ type NavigationText = {
   contact: string;
   privacyPolicy: string;
   termsOfService: string;
-  rights: string;
   servicesNames: {
     supervision: string;
     commissioning: string;
@@ -118,6 +117,12 @@ export default function Navigation({
             </li>
           </ul>
         </div>
+        <Link href={"#"}>
+          <i
+            className="fa-brands fa-linkedin-in fa-2xl"
+            style={{ color: "var(--fg)" }}
+          ></i>
+        </Link>
       </div>
     </div>
   );

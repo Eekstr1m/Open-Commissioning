@@ -10,7 +10,9 @@ export default async function ContactPage({ lang }: { lang: Locale }) {
 
   return (
     <div className={s.container}>
-      <HeadBackground url={bg.src} title={contactPage.title} />
+      <div style={{ padding: "0 10px" }}>
+        <HeadBackground url={bg.src} title={contactPage.title} />
+      </div>
       <Contact lang={lang} />
       <div className={s.content}>
         <p>{contactPage.content.text1}</p>
