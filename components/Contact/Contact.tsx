@@ -28,22 +28,6 @@ export default async function Contact({ lang }: { lang: Locale }) {
         </div>
         <div className={s.info}>
           <div>
-            <p className={s.info_title}>{contactPage.contact.uaAddress}</p>
-            <p className={s.info_desc}>{contactPage.contact.ua}</p>
-            <p className={s.info_desc}>{contactPage.contact.ua2}</p>
-            <p className={s.info_desc}>{contactPage.contact.uaDesc}</p>
-          </div>
-          <div>
-            <p className={s.info_title}>{contactPage.contact.phone}</p>
-            <p className={s.info_desc}>{contactPage.contact.uaPhone}</p>
-          </div>
-          <div>
-            <p className={s.info_title}>{contactPage.contact.email}</p>
-            <p className={s.info_desc}>{contactPage.contact.uaEmail}</p>
-          </div>
-        </div>
-        <div className={s.info}>
-          <div>
             <p className={s.info_title}>{contactPage.contact.inAddress}</p>
             <p className={s.info_desc}>{contactPage.contact.in}</p>
             <p className={s.info_desc}>{contactPage.contact.in2}</p>
@@ -56,6 +40,22 @@ export default async function Contact({ lang }: { lang: Locale }) {
           <div>
             <p className={s.info_title}>{contactPage.contact.email}</p>
             <p className={s.info_desc}>{contactPage.contact.inEmail}</p>
+          </div>
+        </div>
+        <div className={s.info}>
+          <div>
+            <p className={s.info_title}>{contactPage.contact.uaAddress}</p>
+            <p className={s.info_desc}>{contactPage.contact.ua}</p>
+            <p className={s.info_desc}>{contactPage.contact.ua2}</p>
+            <p className={s.info_desc}>{contactPage.contact.uaDesc}</p>
+          </div>
+          <div>
+            <p className={s.info_title}>{contactPage.contact.phone}</p>
+            <p className={s.info_desc}>{contactPage.contact.uaPhone}</p>
+          </div>
+          <div>
+            <p className={s.info_title}>{contactPage.contact.email}</p>
+            <p className={s.info_desc}>{contactPage.contact.uaEmail}</p>
           </div>
         </div>
       </div>
