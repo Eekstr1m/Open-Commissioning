@@ -12,8 +12,12 @@ export default async function Footer({ lang }: { lang: Locale }) {
         <div className={s.top}>
           <div className={s.nav_block}>
             <Link href={`/${lang}/services`}>{navigation.services}</Link>
-            <Link href={`/${lang}/safety`}>{navigation.safety}</Link>
             <Link href={`/${lang}/industries`}>{navigation.industries}</Link>
+            <Link href={`/${lang}/safety`}>{navigation.safety}</Link>
+            <Link href={`/${lang}/commissioning-in-ukraine`}>
+              {navigation.comInUa}
+            </Link>
+            <Link href={`/${lang}/feedback`}>{navigation.feedback}</Link>
           </div>
           <Link href={"#"}>
             <i

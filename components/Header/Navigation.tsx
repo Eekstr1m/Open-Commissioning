@@ -15,6 +15,8 @@ type NavigationText = {
   contact: string;
   privacyPolicy: string;
   termsOfService: string;
+  comInUa: string;
+  feedback: string;
   servicesNames: {
     supervision: string;
     commissioning: string;
@@ -110,6 +112,19 @@ export default function Navigation({
             <li className={s.nav__item}>
               <Link href={`/${lang}/safety`} className={s.nav__link}>
                 {navigation.safety}
+              </Link>
+            </li>
+            <li className={s.nav__item}>
+              <Link
+                href={`/${lang}/commissioning-in-ukraine`}
+                className={s.nav__link}
+              >
+                {navigation.comInUa}
+              </Link>
+            </li>
+            <li className={s.nav__item}>
+              <Link href={`/${lang}/feedback`} className={s.nav__link}>
+                {navigation.feedback}
               </Link>
             </li>
             <li className={s.nav__item}>

@@ -39,6 +39,8 @@ body {
   overflow-x: hidden;
 
   background-color: var(--main);
+
+  text-align: justify;
 }
 
 a {
