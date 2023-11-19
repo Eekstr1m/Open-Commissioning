@@ -19,7 +19,6 @@
 
 .top {
   display: flex;
-  // align-items: center;
   justify-content: space-between;
 }
 .nav_block {
@@ -53,5 +52,15 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+  }
+}
+
+@media (max-width: 580px) {
+  .nav_block {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .top {
+    align-items: center;
   }
 }
