@@ -43,6 +43,7 @@ const Title = styled.div`
 
   font-weight: 600;
   font-size: 32px;
+  text-align: left;
 `;
 
 const LogoWrapper = styled.div`

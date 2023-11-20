@@ -7,7 +7,7 @@
     "contact": "Contact",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service",
-    "comInUa": "Commissioning in Ukraine",
+    "comInUa": "Projects in Ukraine",
     "feedback": "Feedback",
     "servicesNames": {
       "supervision": "Supervision",
@@ -341,5 +341,12 @@
         ]
       }
     }
+  },
+  "projectsInUaPage": {
+    "title": "Projects in Ukraine",
+    "desc": "If some of your projects stop or in pause due to war with russia...",
+    "subDesc": "Take note!",
+    "servicesText": "We provide all our services in Ukraine",
+    "contactText": "Contact us for details"
   }
 }
