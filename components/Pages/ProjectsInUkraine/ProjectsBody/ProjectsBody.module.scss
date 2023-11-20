@@ -1,0 +1,30 @@
+.desc {
+  text-align: center;
+  font-size: 20px;
+  padding: 80px 0;
+}
+.wrapper {
+  display: flex;
+  //   gap: 400px;
+  gap: 40%;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+.content_item {
+  display: grid;
+  place-items: center;
+  gap: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    gap: 20%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
