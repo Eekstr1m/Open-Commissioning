@@ -6,6 +6,7 @@ import Script from "next/script";
 import { Locale } from "@/i18n.config";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
+import Head from "next/head";
 
 const nunito = Nunito({ subsets: ["latin"] });
 
@@ -27,6 +28,9 @@ export default function RootLayout({
         src="https://kit.fontawesome.com/d37f4b642f.js"
         crossOrigin="anonymous"
       ></Script>
+      <Head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </Head>
       <body className={nunito.className}>
         <ThemeChangeProvider>
           <Header lang={params.lang} />
