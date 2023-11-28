@@ -346,5 +346,9 @@
     "subDesc": "Take note!",
     "servicesText": "We provide all our services in Ukraine",
     "contactText": "Contact us for details"
+  },
+  "feedbackPage": {
+    "title": "Feedback",
+    "desc": "Our clients who were satisfied with the services provided to them"
   }
 }
