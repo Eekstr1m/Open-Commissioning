@@ -10,8 +10,10 @@
   justify-content: center;
   padding-bottom: 80px;
 }
+
 .content_item {
   display: grid;
   place-items: center;
   gap: 30px;
+  width: 300px;
 }
