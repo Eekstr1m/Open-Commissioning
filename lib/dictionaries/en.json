@@ -346,5 +346,12 @@
     "subDesc": "Take note!",
     "servicesText": "We provide all our services in Ukraine",
     "contactText": "Contact us for details"
+  },
+  "feedbackPage": {
+    "title": "Feedback",
+    "desc": "Our clients who were satisfied with the services provided to them",
+    "text": "During the cooperation, Open Commissioning specialists showed a high level of professionalism and ability to work in a team.",
+    "btn": "View full article",
+    "companyName": "optimus-agro"
   }
 }

@@ -17,7 +17,7 @@ export default async function Footer({ lang }: { lang: Locale }) {
             <Link href={`/${lang}/projects-in-ukraine`}>
               {navigation.comInUa}
             </Link>
-            {/* <Link href={`/${lang}/feedback`}>{navigation.feedback}</Link> */}
+            <Link href={`/${lang}/feedback`}>{navigation.feedback}</Link>
           </div>
           <Link href={"#"}>
             <i
