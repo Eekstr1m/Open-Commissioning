@@ -10,7 +10,9 @@
   justify-content: center;
   padding-bottom: 80px;
 }
-
+.logo {
+  filter: invert(var(--invert));
+}
 .content_item {
   display: grid;
   place-items: center;

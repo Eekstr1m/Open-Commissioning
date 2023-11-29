@@ -12,6 +12,8 @@
   --darken_primary: #f08d0b;
   --bg_primary: #fff;
   --orange: #f08d0b;
+
+  --invert: 1;
 }
 
 [data-theme="dark"] {
@@ -25,6 +27,8 @@
   --darken_primary: #ced4da;
   --bg_primary: #393939;
   --orange: #f08d0b;
+
+  --invert: 0;
 }
 
 * {
