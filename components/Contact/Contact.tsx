@@ -61,6 +61,7 @@ export default async function Contact({ lang }: { lang: Locale }) {
         <div className={s.info}>
           <div>
             <p className={s.info_title}>{contactPage.contact.usaAddress}</p>
+            <p className={s.info_desc}>{contactPage.contact.usaDesc}</p>
           </div>
           <div>
             <p className={s.info_title}>{contactPage.contact.phone}</p>

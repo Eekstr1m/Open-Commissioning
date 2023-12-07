@@ -218,9 +218,10 @@
       "inDesc": "India",
       "inPhone": "+91 9886293759",
       "inEmail": "oc.in@opnc.ltd",
-      "usaAddress": "Representation in USA:",
+      "usaAddress": "USA Representation",
       "usaPhone": "+1 270 210 4671",
-      "usaEmail": "oc.usa@opnc.ltd "
+      "usaEmail": "oc.usa@opnc.ltd ",
+      "usaDesc": "IT Department"
     },
     "form": {
       "labels": {
