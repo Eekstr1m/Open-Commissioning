@@ -4,10 +4,12 @@ const email = process.env.EMAIL;
 const pass = process.env.EMAIL_PASS;
 
 export const transporter = nodemailer.createTransport({
-  service: "gmail",
+  host: "send.one.com",
+  port: 587,
+  secure: false,
   auth: {
     user: email,
-    pass,
+    pass: pass,
   },
 });
 
