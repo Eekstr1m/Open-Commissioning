@@ -230,10 +230,11 @@
         "messageLabel": "Your Message*",
         "button": "Submit"
       },
-      "errors": {
+      "valid": {
         "requiredError": "*This field is required",
         "invalidEmailError": "*Please enter a valid email address",
-        "sendMessageError": "Failed to send message"
+        "sendMessageError": "Failed to send message",
+        "successMessage": "Message sended successful"
       }
     },
     "content": {

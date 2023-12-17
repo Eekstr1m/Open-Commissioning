@@ -74,7 +74,7 @@ export default async function Contact({ lang }: { lang: Locale }) {
         </div>
       </div>
       <div className={s.titleForm}>{contactPage.title}:</div>
-      <ContactForm contactText={contactPage.form} />
+      <ContactForm contactText={contactPage.form} lang={lang} />
     </section>
   );
 }

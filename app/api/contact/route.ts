@@ -1,6 +1,6 @@
+import nodemailer from "nodemailer";
 import { FormValuesType } from "@/components/Contact/ContactForm/ContactForm";
-import { mailOptions } from "./../../../common-data/nodemailer/nodemailer";
-import { transporter } from "@/common-data/nodemailer/nodemailer";
+import { emailData } from "./../../../common-data/nodemailer/nodemailer";
 
 const CONTACT_MESSAGE_FIELDS = {
   fullName: "Name",
@@ -8,7 +8,13 @@ const CONTACT_MESSAGE_FIELDS = {
   messageText: "Message Text",
 };
 
-const generateEmailContent = (data: FormValuesType) => {
+type FormValuesT = {
+  fullName: string;
+  email: string;
+  messageText: string;
+};
+
+const generateEmailContent = (data: FormValuesT) => {
   const stringData = Object.entries(data).reduce((str, [key, value]) => {
     return (str += `${(CONTACT_MESSAGE_FIELDS as any)[key]}: \n${value} \n \n`);
   }, "");
@@ -160,12 +166,27 @@ const generateEmailContent = (data: FormValuesType) => {
 };
 
 export async function POST(req: Request) {
-  const data = await req.json();
+  const data: FormValuesType = await req.json();
+
+  emailData.emailDataGenerator(data.lang);
 
   try {
+    const emailGenerateData = {
+      fullName: data.fullName,
+      email: data.email,
+      messageText: data.messageText,
+    };
+
+    const transporter = nodemailer.createTransport({
+      host: "send.one.com",
+      port: 587,
+      secure: false,
+      auth: emailData.getAuthData(),
+    });
+
     await transporter.sendMail({
-      ...mailOptions,
-      ...generateEmailContent(data),
+      ...emailData.getMailOptions(),
+      ...generateEmailContent(emailGenerateData),
       subject: data.fullName,
     });
     return Response.json("Success");

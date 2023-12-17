@@ -1,19 +1,36 @@
-import nodemailer from "nodemailer";
+import { Locale } from "@/i18n.config";
 
-const email = process.env.EMAIL;
-const pass = process.env.EMAIL_PASS;
+const emailUK = process.env.EMAIL_UK;
+const passUK = process.env.EMAIL_PASS_UK;
+const emailUA = process.env.EMAIL_UA;
+const passUA = process.env.EMAIL_PASS_UA;
 
-export const transporter = nodemailer.createTransport({
-  host: "send.one.com",
-  port: 587,
-  secure: false,
-  auth: {
-    user: email,
-    pass: pass,
+const emailENV = {
+  en: {
+    email: emailUK,
+    pass: passUK,
   },
-});
+  ua: {
+    email: emailUA,
+    pass: passUA,
+  },
+};
 
-export const mailOptions = {
-  from: email,
-  to: email,
+export const emailData = {
+  emailDataGenerator(lang: Locale) {
+    let data = emailENV[lang];
+    console.log(data);
+
+    return (this.data = data);
+  },
+  data: {
+    email: "",
+    pass: "",
+  },
+  getMailOptions() {
+    return { from: this.data.email, to: this.data.email };
+  },
+  getAuthData() {
+    return { user: this.data.email, pass: this.data.pass };
+  },
 };
