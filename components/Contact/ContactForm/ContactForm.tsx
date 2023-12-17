@@ -2,7 +2,8 @@
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import s from "./ContactForm.module.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { Locale } from "@/i18n.config";
 
 export const sendContactForm = async (data: any, errMsg: string) =>
   fetch("/api/contact", {
@@ -21,6 +22,7 @@ export type FormValuesType = {
   fullName: string;
   email: string;
   messageText: string;
+  lang: Locale;
 };
 
 type ContactText = {
@@ -30,19 +32,23 @@ type ContactText = {
     messageLabel: string;
     button: string;
   };
-  errors: {
+  valid: {
     requiredError: string;
     invalidEmailError: string;
     sendMessageError: string;
+    successMessage: string;
   };
 };
 
 export default function ContactForm({
   contactText,
+  lang,
 }: {
   contactText: ContactText;
+  lang: Locale;
 }) {
   const [errorForm, setErrorForm] = useState("");
+  const [successForm, setSuccessForm] = useState("");
 
   const formik = useFormik({
     initialValues: {
@@ -51,15 +57,19 @@ export default function ContactForm({
       messageText: "",
     },
     validationSchema: Yup.object({
-      fullName: Yup.string().required(contactText.errors.requiredError),
+      fullName: Yup.string().required(contactText.valid.requiredError),
       email: Yup.string()
-        .email(contactText.errors.invalidEmailError)
-        .required(contactText.errors.requiredError),
-      messageText: Yup.string().required(contactText.errors.requiredError),
+        .email(contactText.valid.invalidEmailError)
+        .required(contactText.valid.requiredError),
+      messageText: Yup.string().required(contactText.valid.requiredError),
     }),
     onSubmit: async (values, { resetForm }) => {
       try {
-        await sendContactForm(values, contactText.errors.sendMessageError);
+        await sendContactForm(
+          { ...values, lang },
+          contactText.valid.sendMessageError
+        );
+        setSuccessForm(contactText.valid.successMessage);
         resetForm();
       } catch (error: any) {
         setErrorForm(error.message);
@@ -67,9 +77,18 @@ export default function ContactForm({
     },
   });
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setErrorForm("");
+      setSuccessForm("");
+    }, 5000);
+    return () => clearTimeout(timer);
+  }, [errorForm, successForm]);
+
   return (
     <form className={s.form} onSubmit={formik.handleSubmit}>
       {errorForm && <div className={s.err_msg}>{errorForm}</div>}
+      {successForm && <div className={s.success_msg}>{successForm}</div>}
 
       <input
         className={s.input}
