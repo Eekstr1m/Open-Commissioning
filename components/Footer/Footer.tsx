@@ -19,7 +19,10 @@ export default async function Footer({ lang }: { lang: Locale }) {
             </Link>
             <Link href={`/${lang}/feedback`}>{navigation.feedback}</Link>
           </div>
-          <Link href={"#"}>
+          <Link
+            target="_blank"
+            href={"https://www.linkedin.com/company/open-commissioning"}
+          >
             <i
               className="fa-brands fa-linkedin-in fa-2xl"
               style={{ color: "var(--fg)" }}
