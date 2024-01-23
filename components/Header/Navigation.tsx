@@ -132,7 +132,10 @@ export default function Navigation({
             </li>
           </ul>
         </div>
-        <Link href={"#"}>
+        <Link
+          target="_blank"
+          href={"https://www.linkedin.com/company/open-commissioning"}
+        >
           <i
             className="fa-brands fa-linkedin-in fa-2xl"
             style={{ color: "var(--fg)" }}
